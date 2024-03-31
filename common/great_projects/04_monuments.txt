@@ -4502,7 +4502,7 @@ l_anse_aux_meadows = {
 		country_modifiers = {
 			global_colonial_growth = 15
 			colonist_placement_chance = 0.05
-			culture_conversion_cost = -0.15
+			culture_conversion_cost = -0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -4536,7 +4536,7 @@ l_anse_aux_meadows = {
 		country_modifiers = {
 			global_colonial_growth = 20
 			colonist_placement_chance = 0.1
-			culture_conversion_cost = -0.25
+			culture_conversion_cost = -0.15
 			merchants = 1
 		}
 
@@ -4572,7 +4572,7 @@ l_anse_aux_meadows = {
 		country_modifiers = {
 			global_colonial_growth = 30
 			colonist_placement_chance = 0.15
-			culture_conversion_cost = -0.45
+			culture_conversion_cost = -0.25
 			merchants = 2
 			colonists = 1
 		}
