@@ -73,13 +73,6 @@ country_decisions = {
 					}
 					TIR = { NOT = { num_of_cities = 8 } }
 				}
-				AND = {
-					OR = {
-						VOR = {	junior_union_with = ROOT }
-						VOR = {	is_subject_of = ROOT }
-					}
-					VOR = { NOT = { num_of_cities = 8 } }
-				}
 			}
 		}
 		effect = {
@@ -124,12 +117,6 @@ country_decisions = {
 					    	is_subject_of = ROOT
 							NOT = { num_of_cities = 8 }
 					    }
-						VOR = {
-					    	exists = yes
-					    	ai = yes
-					    	is_subject_of = ROOT
-							NOT = { num_of_cities = 8 }
-					    }
 					}
 				}
 				inherit = CNL
@@ -138,7 +125,6 @@ country_decisions = {
 				inherit = SH1
 				inherit = STY
 				inherit = TIR
-				inherit = VOR
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			change_tag = HAB

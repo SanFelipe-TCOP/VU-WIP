@@ -4579,11 +4579,13 @@ vu_downstream_of_india = {
  }
  
  vu_andean_cities_trigger = {
-    OR = {
-	    culture_group = andean_group
-		culture_group = chibchan
-	    religion = inti
-	}
+    owner = {
+        OR = {
+            culture_group = andean_group
+            culture_group = chibchan
+            religion = inti
+        }
+    }
     has_owner_religion = yes
  }
  

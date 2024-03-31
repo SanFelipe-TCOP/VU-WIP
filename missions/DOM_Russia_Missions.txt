@@ -3777,7 +3777,7 @@ rus_russian_disaster = {
 				id = flavor_rus.134
 				insight_tooltip = INSIGHT_JUST_TOOLTIP
 				effect_tooltip = "
-				change_technology_group = western
+		#		change_technology_group = western
 				add_prestige_or_monarch_power = {
 					amount = 50
 				}"
@@ -4841,7 +4841,7 @@ rus_russian_military = {
 				id = flavor_rus.45
 				insight_tooltip = INSIGHT_JUST_TOOLTIP
 				effect_tooltip = "
-				change_unit_type = western
+		#		change_unit_type = western
 				add_country_modifier = {
 					name = rus_western_military_tactics
 					duration = -1
