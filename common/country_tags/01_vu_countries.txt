@@ -1051,15 +1051,15 @@ KYG = "countries/Kyrgyz.txt"                     #Currently in VU
 #LTI = "countries/Lithang.txt"
 #MUI = "countries/Muli.txt"
 #NGL = "countries/Ninglang.txt"
+#
 ##Extra Additions
 #OMO = "countries/Dromo.txt"
 #LZE = "countries/Lhunze.txt"
 #
-#
 ##Xinjiang
 #MHS = "countries/Moghulistan.txt"
 #
-##China
+##China Princes/Revolters
 #SNG = "countries/Song.txt"
 #
 #HNA = "countries/Han.txt"
@@ -1072,6 +1072,93 @@ KYG = "countries/Kyrgyz.txt"                     #Currently in VU
 #LIA = "countries/Liao.txt"
 #QIA = "countries/Qiang.txt"
 #LII = "countries/Li.txt"
+#
+##China Tusi
+##Guizhou
+#BOZ = "countries/Bozhou.txt"
+#SHD = "countries/Shuidong.txt"
+#SHX = "countries/Shuixi.txt"
+#SZI = "countries/Sizhou.txt"
+#RGM = "countries/Rongmei.txt"
+#
+#ZHG = "countries/Zhonglu.txt"
+#ZHX = "countries/Zhongxiao.txt"
+#JND = "countries/Jindong.txt"
+#LNT = "countries/Longtan.txt"
+#SAH = "countries/Shinan.txt"
+#DXW = "countries/Dongxiangwulu.txt"
+#OLU = "countries/Gaoluo.txt"
+#ZHD = "countries/Zhongdong.txt"
+#ZHJ = "countries/Zhongjian.txt"
+#NMA = "countries/Sanmao.txt"
+#DWG = "countries/Dawang.txt"
+#BJG = "countries/Baojing.txt"
+#
+##Hunan
+#YGS = "countries/Yongshun.txt"
+#YOU = "countries/Youyang.txt"
+#CBU = "countries/Chengbu.txt"
+#
+##Sichuan
+#HYU = "countries/Hanyuan.txt"
+#ZNX = "countries/Zhenxiong.txt"
+#BJE = "countries/Bijiewei.txt"
+#WMG = "countries/Wumeng.txt"
+#ZHY = "countries/Zhanyi.txt"
+#DGC = "countries/Dongchuan.txt"
+#ZHT = "countries/Zhaotong.txt"
+#
+##Guangxi
+#SIH = "countries/Sicheng.txt"
+#ANP = "countries/Anping.txt" #Anlong
+#XNC = "countries/Xincheng.txt"
+#WCG = "countries/Wancheng.txt"
+#TIZ = "countries/Tianzhou.txt"
+#GIS = "countries/Guishun.txt"
+#SIG = "countries/Siming.txt"
+#LGY = "countries/Longying.txt"
+#GUH = "countries/Guohua.txt"
+#ZGA = "countries/Zheng'An.txt"
+#CGD = "countries/Chungdo.txt"
+#TZH = "countries/Tuzhou.txt"
+#ZIY = "countries/Ziyun.txt"
+#DDS = "countries/Dandoshu.txt"
+#
+##Yunnan
+#ZYU = "countries/ZhanyiYunnan.txt"
+#AGI = "countries/Anning.txt" 
+#NIY = "countries/NingYunnan.txt" 
+#FUU = "countries/Fu.txt" 
+#OGN = "countries/Yongning.txt" 
+#ESG = "countries/Beisheng.txt" 
+#DCH = "countries/Dengchuan.txt" 
+#NGY = "countries/Ningyuan.txt" 
+#TNY = "countries/KengtungYunnan.txt" 
+#HYN = "countries/Zhenyuan.txt" 
+#JDG = "countries/Jingdong.txt" 
+#YUN = "countries/Yun.txt" 
+#GMA = "countries/Gengma.txt" 
+#NGD = "countries/Mengding.txt" 
+#ZKA = "countries/Zhenkang.txt" 
+#WDN = "countries/Wandian.txt" 
+#GYI = "countries/Guangyi.txt" 
+#MHU = "countries/Menghua.txt" 
+#WDI = "countries/Wadian.txt" 
+#LJI = "countries/Lujiang.txt" 
+#NND = "countries/Nandian.txt" 
+#GYA = "countries/Ganya.txt" 
+#MMO = "countries/Manmo.txt" 
+#LCH = "countries/Longchuan.txt" 
+#
+#DQG = "countries/Diqing.txt" 
+#FUG = "countries/Fugong.txt" 
+#AOA = "countries/Yaoan.txt" #Yao'an
+#LYU = "countries/Changzhou.txt" 
+#MIY = "countries/Yuanyang.txt" 
+#
+#AMI = "countries/Ami.txt" 
+#YNN = "countries/Yunnan.txt" 
+#NUJ = "countries/Nujiang.txt" 
 #
 #######Sphinx India Overhaul######
 ##Eastern India

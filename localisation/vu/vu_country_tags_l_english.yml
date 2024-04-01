@@ -416,7 +416,7 @@
  HOY_ADJ:0 "Hoyan"
  
  #VU Additions
- VOR:0 "Weiteres Österreich"
+ VOR:0 "Further Austria"
  VOR_ADJ:0 "Austrian"
  #VU Additions
  #English Countries
@@ -1261,8 +1261,8 @@
  VYE_ADJ: "Vyean"
 
  #Austria
- AUT:0 "Österreich"
- AUT_ADJ:0 "Österreichisch"
+ AUT:0 "Austria"
+ AUT_ADJ:0 "Austrian"
  CR1:0 "Carinthia"
  CR1_ADJ:0 "Carinthian"
  

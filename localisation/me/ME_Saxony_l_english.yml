@@ -118,7 +118,7 @@
  saxony_church_above_crown_tt: "\n§OThis will make it impossible to complete the missions of the Protestant respectively Reformed branch. \nThe missions will be automatically completed without giving any bonuses.§!"
  saxony_crown_above_church_tt: "\n§OThis will make it impossible to complete the missions of the Catholic branch. \nThe missions will be automatically completed without giving any bonuses.§!"
  saxony_other_religous_branch_was_selected_tt: "§RThe other religious branch was selected, this mission did not grant any bonuses.§!"
- SAX_HAS_CONVERTED_AT_LEAST_15_PROVS: "§Y[Root.GetName]§! has converted at least §Y15§! provinces (currently §Y[Root.num_converted_religion.GetValue]§!)"
+ SAX_HAS_CONVERTED_AT_LEAST_15_PROVS: "§Y[Root.GetName]§! has converted at least §Y15§! provinces."
  SAX_RULER_STATS_COMBINED_ARE_AT_LEAST_10: "The £adm£, £dip£ and £mil£ skills of §Y[Root.Monarch.GetName]§! combined are at least §Y10§!\n"
  saxony_claim_east_frankish_heritage_completed_tt: "§RWe decided to claim the East Frankish heritage, this mission did not grant any bonuses.§!"
  saxony_the_road_to_germany_completed_tt: "§RWe decided to unite [GER.GetName], this mission did not grant any bonuses.§!"
