@@ -2380,7 +2380,6 @@ fort_canning_hill = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-		    monthly_karma = 0.1
 			church_loyalty_modifier = 0.01
 			yearly_karma_decay = 0.001
 		}
@@ -2414,7 +2413,6 @@ fort_canning_hill = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-		    monthly_karma = 0.2
 			church_loyalty_modifier = 0.05
 			yearly_karma_decay = 0.002
 			global_missionary_strength = 0.02
@@ -2456,7 +2454,6 @@ fort_canning_hill = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-		    monthly_karma = 0.3
 			church_loyalty_modifier = 0.1
 			yearly_karma_decay = 0.003
 			global_missionary_strength = 0.04

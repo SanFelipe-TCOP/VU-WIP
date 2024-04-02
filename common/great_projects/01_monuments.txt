@@ -1834,11 +1834,10 @@ angkor_wat = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-		    yearly_karma_decay = 0.05  #(buddhist)
 			technology_cost = -0.05
 			idea_cost = -0.1
 			vassal_income = 0.1
-			yearly_karma_decay = 0.001
+			yearly_karma_decay = 0.001 #(buddhist)
 		}
 
 		#what effects happen when this tier is achieved
@@ -1876,11 +1875,10 @@ angkor_wat = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			yearly_karma_decay = 0.1  #(buddhist)
 			technology_cost = -0.02
 			idea_cost = -0.2
 			vassal_income = 0.2
-			yearly_karma_decay = 0.002
+			yearly_karma_decay = 0.002  #(buddhist)
 		}
 
 		#what effects happen when this tier is achieved
@@ -1919,12 +1917,11 @@ angkor_wat = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			yearly_karma_decay = 0.15  #(buddhist)
 			technology_cost = -0.03
 			all_power_cost = -0.3
 			idea_cost = -0.3
 			vassal_income = 0.3
-			yearly_karma_decay = 0.003
+			yearly_karma_decay = 0.003  #(buddhist)
 		}
 
 		#what effects happen when this tier is achieved

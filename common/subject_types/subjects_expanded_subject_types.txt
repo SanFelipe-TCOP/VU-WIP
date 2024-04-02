@@ -4012,7 +4012,7 @@ religious_march = {
 			#	NOT = { adm_tech = 50 }
 			#}
 			AND = {
-				has_global_flag = idea_groups_expanded_mod_active
+				#has_global_flag = idea_groups_expanded_mod_active #VU - Hashed this out as we don't use IGE
 				OR = {
 					AND = {
 						religion_group = christian
@@ -4251,7 +4251,7 @@ medieval_vassal = {
 		OR = {
 			government = monarchy
 			# Custom Rule
-			has_government_attribute = can_create_medieval_vassal_rule
+			#has_government_attribute = can_create_medieval_vassal_rule
 		}
 		OR = {
 			AND = {
@@ -4273,7 +4273,7 @@ medieval_vassal = {
 						continent = europe
 					}
 					# Custom Rule
-					has_government_attribute = can_create_medieval_vassal_rule
+					#has_government_attribute = can_create_medieval_vassal_rule
 				}
 			}
 			AND = {
@@ -4308,7 +4308,7 @@ medieval_vassal = {
 					#has_reform = salic_reform
 					#has_reform = imperial_march_reform
 					# Custom Rule
-					has_government_attribute = can_create_medieval_vassal_rule
+					#has_government_attribute = can_create_medieval_vassal_rule
 				}
 			}
 		}

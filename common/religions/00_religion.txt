@@ -123,7 +123,7 @@ christian = {
 			# Papal Actions below!
 			
 			levy_church_tax = {
-				cost = 50
+				cost = 40 #Decreased this to 40 from 50 - SF
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -142,7 +142,7 @@ christian = {
 				}				
 			}			
 			bless_monarch = {
-				cost = 50
+				cost = 40 #Decreased this to 40 from 50 - SF
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -162,7 +162,7 @@ christian = {
 				}
 			}
 			indulgence_for_sins = {
-				cost = 50
+				cost = 40 #Decreased this to 40 from 50 - SF
 				potential = {
 					government = monarchy
 					NOT = { tag = PAP }
@@ -183,7 +183,7 @@ christian = {
 				}
 			}	
 			local_saint = {
-				cost = 100
+				cost = 80 #Decreased this to 80 from 100 - SF
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -203,7 +203,7 @@ christian = {
 				}
 			}
 			forgiveness_for_usury = {
-				cost = 50
+				cost = 40 #Decreased this to 40 from 50 - SF
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -226,7 +226,7 @@ christian = {
 				}
 			}			
 			proclaim_holy_war = {
-				cost = 50
+				cost = 60 #Increased this to 60 from 50 - SF
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -250,7 +250,7 @@ christian = {
 				}
 			}
 			send_papal_legate = {
-				cost = 50
+				cost = 40 #Decreased this to 40 from 50 - SF
 				potential = {
 					NOT = { tag = PAP }
 					is_papal_controller = no
@@ -270,7 +270,7 @@ christian = {
 				}
 			}	
 			sanction_commercial_monopoly = {
-				cost = 50
+				cost = 40 #Decreased this to 40 from 50 - SF
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -279,7 +279,7 @@ christian = {
 					NOT = { mercantilism = 100 }
 				}
 				effect = {
-					add_mercantilism = 1
+					add_mercantilism = 2
 				}
 				ai_will_do = {
 					factor = 1
@@ -345,7 +345,7 @@ christian = {
 			# Papal Actions below!
 			
 			levy_church_tax = {
-				cost = 50
+				cost = 40 #Decreased this to 40 from 50 - SF
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -364,7 +364,7 @@ christian = {
 				}				
 			}			
 			bless_monarch = {
-				cost = 50
+				cost = 40 #Decreased this to 40 from 50 - SF
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -384,7 +384,7 @@ christian = {
 				}
 			}
 			indulgence_for_sins = {
-				cost = 50
+				cost = 40 #Decreased this to 40 from 50 - SF
 				potential = {
 					government = monarchy
 					NOT = { tag = PAP }
@@ -405,7 +405,7 @@ christian = {
 				}
 			}	
 			local_saint = {
-				cost = 100
+				cost = 80 #Decreased this to 80 from 100 - SF
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -425,7 +425,7 @@ christian = {
 				}
 			}
 			forgiveness_for_usury = {
-				cost = 50
+				cost = 40 #Decreased this to 40 from 50 - SF
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -448,7 +448,7 @@ christian = {
 				}
 			}			
 			proclaim_holy_war = {
-				cost = 50
+				cost = 60 #Increased this to 60 from 50 - SF
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -472,7 +472,7 @@ christian = {
 				}
 			}
 			send_papal_legate = {
-				cost = 50
+				cost = 40 #Decreased this to 40 from 50 - SF
 				potential = {
 					NOT = { tag = PAP }
 					is_papal_controller = no
@@ -492,7 +492,7 @@ christian = {
 				}
 			}	
 			sanction_commercial_monopoly = {
-				cost = 50
+				cost = 40 #Decreased this to 40 from 50 - SF
 				potential = {
 					NOT = { tag = PAP }
 				}
@@ -501,7 +501,7 @@ christian = {
 					NOT = { mercantilism = 100 }
 				}
 				effect = {
-					add_mercantilism = 1
+					add_mercantilism = 2
 				}
 				ai_will_do = {
 					factor = 1
@@ -550,16 +550,17 @@ christian = {
 			protestant
 			reformed
 		}
+
 		country = {
-			development_cost = -0.1
-			technology_cost = -0.05 #Don't remove this - SF
-			morale_damage = 0.025
+			development_cost = -0.15 #Increased this from -0.1 to -0.15 - SF
+			technology_cost = -0.15 #Increased this to -0.15 from -0.05 - SF
+			morale_damage = 0.035
 			religious_unity = 0.15
 			tolerance_own = 1
-			trade_company_governing_cost = -0.1
+			idea_cost = -0.15 #Increased from -0.1 to -0.15 - SF
 			#debuffs
-			church_power_modifier = -0.15 #might have to decrease, it might be too bit hard to activate any powers
-			church_influence_modifier = 0.1
+			church_power_modifier = -0.1 #Decreased this to -0.1 from -0.15 - SF
+			church_influence_modifier = 0.15 #Increased this to 0.15 from 0.1 - SF
 		}
 		
 		country_as_secondary = {
@@ -568,6 +569,7 @@ christian = {
 			tolerance_own = 0.5
 			religious_unity = 0.1
 		}
+
 		province = {
 			local_autonomy = -0.05
 		}
@@ -593,7 +595,7 @@ christian = {
 								religion = anglican
 								is_reformation_center = yes
 							}
-							amount = 5
+							amount = 2
 						}
 					}
 				}
@@ -619,11 +621,11 @@ christian = {
 								religion = anglican
 								is_reformation_center = yes
 							}
-							amount = 5
+							amount = 2
 						}
 					}
 				}
-				add_years_of_income = 5.0
+				add_years_of_income = 4.0 #Increased from 3.0
 				hidden_effect = {
 					random_owned_province = {
 						limit = {
@@ -681,10 +683,10 @@ christian = {
 			#buffs
 			shock_damage_received = -0.05
 			global_heretic_missionary_strength = 0.02							   
-			land_morale = 0.1
+			land_morale = 0.05 #Was 0.1 but halved by don
 			military_tactics = 0.1 #hussites were among the first to use guns, and used innovative tactics using wagons (might have to remove this if it proves to be too OP)
 			#debuffs
-			tolerance_heretic = -1
+			tolerance_heretic = -2
 			naval_forcelimit_modifier = -0.15 #not the best swimmers XD
 		}
 		
@@ -735,7 +737,7 @@ christian = {
 								religion = hussite
 								is_reformation_center = yes
 							}
-							amount = 5
+							amount = 1 #Lowered this to 1
 						}
 					}
 				}
@@ -761,7 +763,7 @@ christian = {
 								religion = hussite
 								is_reformation_center = yes
 							}
-							amount = 5
+							amount = 1 #Lowered this to 1
 						}
 					}
 				}
@@ -826,20 +828,27 @@ christian = {
 			hussite
 			reformed
 		}
+
 		country = {
+			#buffs
 			production_efficiency = 0.05 #Don's addition
+			idea_cost = -0.025
 			global_tax_modifier = 0.1
 			improve_relation_modifier = 0.15
 			church_loyalty_modifier = 0.1
+			#debuffs
+			church_influence_modifier = 0.1
 		}
 		
 		country_as_secondary = {
 			idea_cost = -0.05
+			global_tax_modifier = 0.05            #Don's addition
 			improve_relation_modifier = 0.1
 			church_loyalty_modifier = -0.05
 		}
 		
-		uses_church_power = yes				# Uses church power/aspect mechanics		
+		uses_church_power = yes				# Uses church power/aspect mechanics
+
 		aspects = {
 			organised_through_bishops_aspect
 			priests_may_marry_aspect
@@ -891,7 +900,7 @@ christian = {
 								religion = protestant
 								is_reformation_center = yes
 							}
-							amount = 5
+							amount = 3
 						}
 					}
 				}
@@ -917,7 +926,7 @@ christian = {
 								religion = protestant
 								is_reformation_center = yes
 							}
-							amount = 5
+							amount = 3
 						}
 					}
 				}
@@ -5236,7 +5245,7 @@ pagan = {
 			sunni
 		}
 
-		holy_sites = { 341 8067 225 5205 5322 7095 }
+		holy_sites = { 225 341 5205 5322 7095 8067 }
 
 		blessings = {
 			#VU - Keep this for now in v1.36.2.* but change later. By San Felipe

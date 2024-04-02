@@ -187,7 +187,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_town_hall_thaigfx"
-		texturefile = "gfx//interface//buildings//government//hall//thai//thai_town_hall.tga"
+		texturefile = "gfx//interface//buildings//government//town_hall//thai//thai_town_hall.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {

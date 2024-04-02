@@ -980,7 +980,7 @@
 					}
 					technology_group = chinese
 				}
-				has_reform = basic_reformed_mandala_reform
+				has_reform = mandala_reform #Was basic_reformed_mandala_reform but made no sense - SF
 			}	
 		}
 		valid_for_nation_designer = yes
@@ -993,11 +993,12 @@
 				religion_group = dharmic
 				religion_group = muslim
 				religion_group = buddhist_group
+				religion = animism
 			}
 			technology_group = chinese
 		}
 		trigger = {
-			has_reform = basic_reformed_mandala_reform
+			have_had_reform = mandala_reform #Was basic_reformed_mandala_reform but made no sense - SF
 		}
 		modifiers = {
 			vassal_forcelimit_bonus = 1
@@ -1030,7 +1031,7 @@
 			technology_group = chinese
 		}
 		trigger = {
-			has_reform = solar_kingdom_reform
+			have_had_reform = mandala_reform #Was solar_kingdom_reform but made no sense - SF
 		}
 		modifiers = {
 			vassal_forcelimit_bonus = 2 
