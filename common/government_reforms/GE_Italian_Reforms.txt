@@ -1254,7 +1254,7 @@ italian_mercenaries_reform = {
 		}
 		else_if = {
 			limit = {
-				uses_legitimacy = yes
+				uses_republican_tradition = no #Was uses_legitimacy = yes but changed on Altan's suggestion. By SF
 			}
 			change_variable = {
 				which = Burgher_Influence
@@ -1272,7 +1272,7 @@ italian_mercenaries_reform = {
 		}
 		else_if = {
 			limit = {
-				uses_legitimacy = yes
+				uses_republican_tradition = no #Was uses_legitimacy = yes but changed on Altan's suggestion. By SF
 			}
 			change_variable = {
 				which = Burgher_Influence

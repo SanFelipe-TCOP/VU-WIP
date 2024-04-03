@@ -1422,8 +1422,8 @@ country_event = {
 				limit = {
 					has_dlc = "Leviathan"
 				}
+				add_development_half_monthly_monarch_power = yes
 			}
-			add_development_half_monthly_monarch_power = yes
 		}
 	}
 
