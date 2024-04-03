@@ -501,7 +501,7 @@ fort_san_augustine = {
 }
 
 fort_schoonenborch = {
-	start = 751
+	start = 3065
 	date = 1649.01.01	
 	time = { months = 0 }
 	build_cost = 0

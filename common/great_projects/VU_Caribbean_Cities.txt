@@ -49,7 +49,7 @@ vu_nassau_caribbean = {
 }
 
 vu_santiago_de_cuba_caribbean = {
-    start = 5707
+    start = 486
     date = 1514.01.01
     time = { months = 0 }
     build_cost = 0
@@ -549,7 +549,7 @@ vu_barbados_caribbean = {
 }
 
 vu_tobago_caribbean = {
-    start = 502
+    start = 5581
     date = 1628.01.01
     time = { months = 0 }
     build_cost = 0
