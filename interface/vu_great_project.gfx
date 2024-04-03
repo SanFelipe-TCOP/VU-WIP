@@ -372,7 +372,7 @@ spriteTypes = {
     }
     spriteType = {
         name = "GFX_great_project_vu_puerto_princesa"	
-        texturefile = "gfx//interface//great_projects//VU_Natural_Wonders//great_project_vu_puerto_princesa.dds"
+        texturefile = "gfx//interface//great_projects//VU_Non_Generic_Towns//great_project_vu_puerto_princesa.dds"
     }
     spriteType = {
         name = "GFX_great_project_vu_darwin"	
@@ -1353,10 +1353,10 @@ spriteTypes = {
 		name = "GFX_great_project_vu_belgrade_fortress"	
 		texturefile = "gfx//interface//VU_great_projects//great_project_vu_belgrade_fortress.dds"
 	}
-	spriteType = {
-		name = "GFX_great_project_vu_arc_of_triumph"	
-		texturefile = "gfx//interface//VU_great_projects//great_project_vu_arc_of_triumph.dds"
-	}
+	#spriteType = {
+	#	name = "GFX_great_project_vu_arc_of_triumph"	
+	#	texturefile = "gfx//interface//VU_great_projects//great_project_vu_arc_of_triumph.dds"
+	#}
 	spriteType = {
 		name = "GFX_great_project_vu_black_stone"	
 		texturefile = "gfx//interface//VU_great_projects//great_project_vu_black_stone.dds"

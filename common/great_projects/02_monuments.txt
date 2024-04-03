@@ -5378,7 +5378,7 @@ plaza_del_zocalo = {
     build_trigger = {
 	    is_year = 1521
 		OR = {
-        		culture_group = iberian
+        	culture_group = iberian
 			culture_group = old_latin
 		} 
 		OR = {
@@ -5395,7 +5395,7 @@ plaza_del_zocalo = {
 
     can_use_modifiers_trigger = {
 		OR = {
-        		culture_group = iberian
+        	culture_group = iberian
 			culture_group = old_latin
 		} 
 		OR = {
@@ -5406,7 +5406,7 @@ plaza_del_zocalo = {
 
     can_upgrade_trigger = {
 		OR = {
-        		culture_group = iberian
+        	culture_group = iberian
 			culture_group = old_latin
 		} 
 		OR = {
@@ -5453,7 +5453,7 @@ plaza_del_zocalo = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_defensiveness = 0.25
+			local_defensiveness = 0.05
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -5462,7 +5462,7 @@ plaza_del_zocalo = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.25
+			army_tradition = 0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -5487,12 +5487,12 @@ plaza_del_zocalo = {
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_defensiveness = 0.25
+			local_defensiveness = 0.15
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			army_tradition = 0.25
+			army_tradition = 0.15
 			prestige = 0.25
 		}
 
@@ -5524,7 +5524,7 @@ plaza_del_zocalo = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			army_tradition = 0.25
-			prestige = 0.25
+			prestige = 0.5
 		}
 
 		#what effects happen when this tier is achieved

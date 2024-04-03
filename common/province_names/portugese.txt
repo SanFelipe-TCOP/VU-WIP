@@ -77,6 +77,7 @@
 517 = "Surate"
 522 = "Deli"
 624 = "Bante"
+655 = { "Palawan" "Porto Princesa" }
 667 = "Cantão"
 684 = "Liampó"
 748 = "Belém"

@@ -17,7 +17,7 @@ l_english:
  #vu_venetian_arsenal: "Arsenal of Venice"
  vu_warsaw_palace: "Royal Castle of Warsaw"
  vu_belgrade_fortress: "Belgrade Fortress" 
- vu_arc_of_triumph: "Arc de Triomphe"
+ #vu_arc_of_triumph: "Arc de Triomphe"              #VU - Removed since there is a better duplicate already in VU. By SF
  vu_black_stone: "Kaaba" 
  #Monument Update May 2021#
  vu_terracotta_army: "Terracotta Army"
