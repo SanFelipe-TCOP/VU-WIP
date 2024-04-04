@@ -7,7 +7,13 @@ mnd_khmer_1 = {
 		has_dlc = "Leviathan"
 	}
 	potential = {
-		tag = KHM
+		OR = {
+			tag = KHM
+			AND = {
+				was_tag = KHM
+				tag = KME
+			}
+		}
 		has_dlc = "Leviathan"
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
@@ -86,7 +92,13 @@ mnd_khmer_2 = {
 		has_dlc = "Leviathan"
 	}
 	potential = {
-		tag = KHM
+		OR = {
+			tag = KHM
+			AND = {
+				was_tag = KHM
+				tag = KME
+			}
+		}
 		has_dlc = "Leviathan"
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
@@ -233,7 +245,13 @@ mnd_khmer_3 = {
 		has_dlc = "Leviathan"
 	}
 	potential = {
-		tag = KHM
+		OR = {
+			tag = KHM
+			AND = {
+				was_tag = KHM
+				tag = KME
+			}
+		}
 		has_dlc = "Leviathan"
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
@@ -501,7 +519,13 @@ mnd_khmer_4 = {
 		has_dlc = "Leviathan"
 	}
 	potential = {
-		tag = KHM
+		OR = {
+			tag = KHM
+			AND = {
+				was_tag = KHM
+				tag = KME
+			}
+		}
 		has_dlc = "Leviathan"
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
@@ -649,7 +673,13 @@ mnd_khmer_5 = {
 		has_dlc = "Leviathan"
 	}
 	potential = {
-		tag = KHM
+		OR = {
+			tag = KHM
+			AND = {
+				was_tag = KHM
+				tag = KME
+			}
+		}
 		has_dlc = "Leviathan"
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
