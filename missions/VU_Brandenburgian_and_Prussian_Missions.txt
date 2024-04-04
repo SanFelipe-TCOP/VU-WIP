@@ -3037,16 +3037,16 @@ PRU_missions_3 = {
 				}
 				OR = {
 					prestige = 50
-					army_size_percentage = 0.9					
+					army_size_percentage = 0.9      #Percentage of army vs force limit
 					army_professionalism = 0.2
-					army_size = 30
+					army_size = 30                  #This is your current army size
 				}
 			}
 			else = {
 				OR = {
 					prestige = 50
-					army_size = 30
-					army_size_percentage = 0.9					
+					army_size = 30                  #This is your current army size
+					army_size_percentage = 0.9      #Percentage of army vs force limit
 				}
 			}
 			total_development = 300
