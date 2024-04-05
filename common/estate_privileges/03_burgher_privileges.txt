@@ -1659,7 +1659,7 @@ estate_burghers_khmer_irrigation = {
 	on_granted_province = {
 		if = {
 			limit = {
-				trade_goods = grain
+				trade_goods = rice
 			}
 			add_province_modifier = {
 				name = estate_burghers_khmer_irrigation_mod
