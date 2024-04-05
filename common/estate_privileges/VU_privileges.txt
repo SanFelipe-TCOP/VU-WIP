@@ -2054,15 +2054,8 @@ ME_estate_nobles_theme_system = {
 	influence = 0.15
 	is_valid = {
 		OR ={
-			if = {
-				limit = { has_country_flag = use_paradox_missions }
-				mission_completed = reestablish_the_theme_system #was byz_restore_themata
-			}
-			
-			if = { 
-				limit = { has_country_flag = use_missions_expanded_missions_instead_of_paradox }
-				mission_completed = byz_restore_themata
-			}
+			mission_completed = reestablish_the_theme_system
+			mission_completed = byz_restore_themata
 		}
 	}
 	penalties = {
