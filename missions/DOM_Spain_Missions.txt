@@ -4858,7 +4858,7 @@ dom_cas_missions_6_c = {
 		}
 
 		trigger = {
-		    owns = 2647
+			2647 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 		    mexico_area = {
