@@ -38,9 +38,7 @@ POL_Missions_1 = {
 			}
 			else_if = {
 				limit = {
-					papal_controller = {
-						exists = yes
-					}
+					papacy_active = yes
 				}
 				OR = {
 					any_country = {
