@@ -1,5 +1,6 @@
 ﻿l_english:
  #Cultures
+ soqotri: "Soqotri"
  tati: "Tati"
  tsakhur: "Tsakhur"
  mingrelian: "Mingrelian"
@@ -121,6 +122,9 @@
  cappadocian: "Cappadocian"
  cypriot: "Cypriot"
  griko: "Griko"
+ greco_bactrian: "Greco-Bactrian"
+ greco_selucid: "Selucian"
+ greco_macedonian: "Macedonian"
  anatolian_greek: "Greco-Syriac"
  karchidoniac: "Karchidoniac"
  egyptian_greek: "Greco-Coptic"
@@ -567,5 +571,7 @@
  bikolano: "Bikolano"
  ursidae: "Ursidae"
  ursus: "Ursus"
+ theban: "Theban"
+ corinthian: "Corinthian"
  
  

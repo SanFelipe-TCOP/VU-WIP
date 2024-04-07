@@ -51,18 +51,16 @@ estate_jews_foster_jews = {
 			num_of_territories = 15
 		}
 		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_jews
-					influence = 60
-				}
-			}
+			factor = 1.5
+			num_of_territories = 15
+		}
+		modifier = {
+			factor = 2
+			jewish = 2
 		}
 		modifier = {
 			factor = 0
-			NOT = { governing_capacity_percentage = 0.5 }
+			jewish = -2
 		}
 		modifier = {
 			factor = 0
@@ -92,7 +90,7 @@ estate_jews_jewish_quarters = {
 	on_granted_province = {
 		if = {
 		    limit = {
-				OR = {
+			OR = {
 		    	   	development = 20
 		    	   	is_capital = yes
 		    	}
@@ -296,6 +294,9 @@ estate_jews_suck_privileges = {
 	}
 	on_granted_province = {
 	}
+	can_revoke = { 
+		NOT = { has_estate_privilege = estate_jews_suck_2 }
+	}
 	on_revoked = {
 		custom_tooltip = estate_jews_suck_revoke_tooltip
 	}
@@ -321,6 +322,14 @@ estate_jews_suck_privileges = {
 		modifier = {
 			factor = 2.5
 			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = -2
+			jewish = 2
+		}
+		modifier = {
+			factor = 2
+			jewish = -2
 		}
 	}
 }
@@ -2044,7 +2053,10 @@ ME_estate_nobles_theme_system = {
 	loyalty = 0.05
 	influence = 0.15
 	is_valid = {
-		mission_completed = reestablish_the_theme_system #was byz_restore_themata
+		OR ={
+			mission_completed = reestablish_the_theme_system
+			mission_completed = byz_restore_themata
+		}
 	}
 	penalties = {
 	}

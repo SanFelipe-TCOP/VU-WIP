@@ -1,21 +1,4 @@
 #Tier 1 {
-    phoenician_elective_monarchical_republic_reform_reform = {
-		icon = "ballot_box"
-		allow_normal_conversion = yes
-		valid_for_nation_designer = yes
-		nation_designer_cost = 10
-		election_on_death = yes
-		queen = no
-		potential = {
-			NOT = { tag = POL }
-		}
-		modifiers = {
-			heir_chance = 1.0
-		}
-		custom_attributes = {
-			enables_phoenician_elective_monarchical_republic_reform = yes
-		}
-	}
 
 	elective_monarchy_reform = {
 		icon = "ballot_box"
@@ -992,7 +975,6 @@
 						religion_group = eastern
 						religion_group = dharmic
 						religion_group = muslim
-						religion_group = buddhist_group
 						religion = animism
 					}
 					technology_group = chinese
@@ -1009,7 +991,7 @@
 				religion_group = eastern
 				religion_group = dharmic
 				religion_group = muslim
-				religion_group = buddhist_group
+				religion = animism
 			}
 			technology_group = chinese
 		}
@@ -1041,7 +1023,6 @@
 				religion_group = eastern
 				religion_group = dharmic
 				religion_group = muslim
-				religion_group = buddhist_group
 				religion = animism
 			}
 			technology_group = chinese
@@ -1381,7 +1362,7 @@
 			tolerance_own = 0.5
 			monthly_fervor_increase = 0.5
 			church_power_modifier = 0.25
-			church_privilege_slots = 0.01
+			church_privilege_slots = 1
 			church_influence_modifier = 0.05
 		}
 		ai = {
@@ -1945,7 +1926,7 @@
 		}
 		custom_attributes = {
 			enables_junker_estate = yes
-			enables_disable_noble_estate = yes
+			disables_estate_nobles = yes
 		}
 		ai = {
 			factor = 100
@@ -6174,7 +6155,7 @@
 				value = 3
 			}
 			NOT = { has_reform = elective_monarchy_reform }
-			NOT = { has_reform = phoenician_elective_monarchical_republic_reform }
+			NOT = { has_reform = carthaginian_elective_monarchical_republic_reform }
 		}
 		trigger = {
 			check_variable = {
@@ -6215,7 +6196,7 @@
 				value = 2
 			}
 			NOT = { has_reform = elective_monarchy_reform }
-			NOT = { has_reform = phoenician_elective_monarchical_republic_reform }
+			NOT = { has_reform = carthaginian_elective_monarchical_republic_reform }
 		}
 		trigger = {
 			check_variable = {
@@ -6254,7 +6235,7 @@
 				value = 2
 			}
 			NOT = { has_reform = elective_monarchy_reform }
-			NOT = { has_reform = phoenician_elective_monarchical_republic_reform }
+			NOT = { has_reform = carthaginian_elective_monarchical_republic_reform }
 		}
 		trigger = {
 			check_variable = {
@@ -6288,7 +6269,7 @@
 				value = 3
 			}
 			NOT = { has_reform = elective_monarchy_reform }
-			NOT = { has_reform = phoenician_elective_monarchical_republic_reform }
+			NOT = { has_reform = carthaginian_elective_monarchical_republic_reform }
 		}
 		trigger = {
 			culture_group = germanic
@@ -6303,6 +6284,7 @@
 		}
 		custom_attributes = {
 			enables_junker_estate = yes
+			disables_estate_nobles = yes
 		}
 		ai = {
 			factor = 0
@@ -6319,7 +6301,7 @@
 			}
 			NOT = { culture_group = germanic }
 			NOT = { has_reform = elective_monarchy_reform }
-			NOT = { has_reform = phoenician_elective_monarchical_republic_reform }
+			NOT = { has_reform = carthaginian_elective_monarchical_republic_reform }
 		}
 		trigger = {
 			check_variable = {
@@ -6344,7 +6326,7 @@
 		allow_normal_conversion = yes
 		potential = {
 			NOT = { has_reform = elective_monarchy_reform }
-			NOT = { has_reform = phoenician_elective_monarchical_republic_reform }
+			NOT = { has_reform = carthaginian_elective_monarchical_republic_reform }
 			check_variable = {
 				which = Burgher_Influence
 				value = 3
@@ -6373,7 +6355,7 @@
 		allow_normal_conversion = yes
 		potential = {
 			NOT = { has_reform = elective_monarchy_reform }
-			NOT = { has_reform = phoenician_elective_monarchical_republic_reform }
+			NOT = { has_reform = carthaginian_elective_monarchical_republic_reform }
 			check_variable = {
 				which = Clergy_Influence
 				value = 3
@@ -6750,7 +6732,7 @@
 		potential = {
 			OR = {
 				has_reform = elective_monarchy_reform
-				has_reform = phoenician_elective_monarchical_republic_reform
+				has_reform = carthaginian_elective_monarchical_republic_reform
 			}
 		}
 		modifiers = {
@@ -6771,7 +6753,7 @@
 		potential = {
 			OR = {
 				has_reform = elective_monarchy_reform
-				has_reform = phoenician_elective_monarchical_republic_reform
+				has_reform = carthaginian_elective_monarchical_republic_reform
 			}
 		}
 		modifiers = {
@@ -6791,7 +6773,7 @@
 		potential = {
 			OR = {
 				has_reform = elective_monarchy_reform
-				has_reform = phoenician_elective_monarchical_republic_reform
+				has_reform = carthaginian_elective_monarchical_republic_reform
 			}
 		}
 		modifiers = {
@@ -6815,7 +6797,7 @@
 		potential = {
 			OR = {
 				has_reform = elective_monarchy_reform
-				has_reform = phoenician_elective_monarchical_republic_reform
+				has_reform = carthaginian_elective_monarchical_republic_reform
 			}
 			religion = catholic
 		}
@@ -6836,7 +6818,7 @@
 		potential = {
 			OR = {
 				has_reform = elective_monarchy_reform
-				has_reform = phoenician_elective_monarchical_republic_reform
+				has_reform = carthaginian_elective_monarchical_republic_reform
 			}
 		}
 		modifiers = {
@@ -9070,7 +9052,7 @@
 				value = 2
 			}
 			NOT = { has_reform = elective_monarchy_reform }
-			NOT = { has_reform = phoenician_elective_monarchical_republic_reform }
+			NOT = { has_reform = carthaginian_elective_monarchical_republic_reform }
 		}
 		trigger = {
 			check_variable = {

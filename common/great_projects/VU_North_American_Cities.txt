@@ -499,7 +499,7 @@ vu_newark_nj = {
 }
 
 vu_syracuse_ny = {
-    start = 960
+    start = 959
     date = 1847.01.01
     time = { months = 0 }
     build_cost = 0
@@ -699,7 +699,7 @@ vu_philadelphia_pa = {
 }
 
 vu_wilmington_de = {
-    start = 957
+    start = 5969
     date = 1832.01.01
     time = { months = 0 }
     build_cost = 0
@@ -849,7 +849,7 @@ vu_washington_dc = {
 }
 
 vu_alexandria_va = {
-    start = 2550
+    start = 5957
     date = 1749.01.01
     time = { months = 0 }
     build_cost = 0
@@ -2800,7 +2800,7 @@ vu_omaha_ne = {
 }
 
 vu_rapid_city_sd = {
-    start = 2505
+    start = 8764
     date = 1876.01.01
     time = { months = 0 }
     build_cost = 0
@@ -3100,7 +3100,7 @@ vu_anchorage_ak = {
 }
 
 vu_billings_mt = {
-    start = 5614
+    start = 5615
     date = 1882.01.01
     time = { months = 0 }
     build_cost = 0

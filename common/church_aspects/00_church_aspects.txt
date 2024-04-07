@@ -1,3 +1,94 @@
+divine_image = {
+        cost = 100
+        modifier = {
+                tolerance_own = 1
+        }
+        ai_will_do = {
+                factor = 15
+                modifier = {
+                        factor = 1
+                        is_at_war = no
+                }
+        }
+}
+grand_triumphs = {
+	cost = 100
+	modifier = {
+		legitimacy = 1
+	}
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}
+	}
+}
+dies_natalis_festival = {
+	cost = 100
+	modifier = {
+		global_tax_modifier = 0.1
+	}
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}
+	}
+}
+radiant_glory = {
+	cost = 100
+	modifier = {
+		stability_cost_modifier = -0.1
+	}
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}
+	}
+}
+tolerance_of_minorities = {
+	cost = 100
+	modifier = {
+		tolerance_heathen = 1
+	}
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}
+	}
+}
+invincible_sun = {
+	cost = 100
+	modifier = {
+		land_morale = 0.1
+	}
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}
+	}
+}
+messenger_of_the_sun = {
+	cost = 100
+	modifier = {
+		global_unrest = -1
+	}
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}
+	}
+}
 organised_through_bishops_aspect = {
 	cost = 100
 	effect = {
@@ -33,7 +124,7 @@ priests_may_marry_aspect = {
 		}
 	}
 	modifier = {
-		same_religion_advisor_cost = -0.15
+		same_religion_advisor_cost = -0.20
 	}
 	ai_will_do = {
 		factor = 10
@@ -200,7 +291,8 @@ heretics_deported_aspect = {
 		}
 	}
 	modifier = {
-		global_colonial_growth = 15
+		global_colonial_growth = 10
+		expel_minorities_cost = -0.25
 	}
 	ai_will_do = {
 		factor = 10
@@ -228,6 +320,7 @@ parish_registers_aspect = {
 	}
 	modifier = {
 		free_adm_policy = 1 
+		governing_capacity = 50
 	}
 	ai_will_do = {
 		factor = 5
@@ -246,7 +339,8 @@ individual_creeds_aspect = {
 		}
 	}
 	modifier = { 
-		idea_cost = -0.1
+		idea_cost = -0.05
+		technology_cost = -0.05
 	}
 	ai_will_do = {
 		factor = 15
@@ -265,7 +359,8 @@ allow_usury_aspect = {
 		}
 	}
 	modifier = { 
-		production_efficiency = 0.15
+		production_efficiency = 0.1
+		global_tax_income = 12
 	}
 	ai_will_do = {
 		factor = 17
@@ -293,6 +388,7 @@ translated_bibles_aspect = {
 	}
 	modifier = {
 		global_unrest = -2
+		harsh_treatment_cost = 0.1
 	}
 	ai_will_do = {
 		factor = 10
@@ -319,7 +415,7 @@ justified_religious_war_aspect = {
 		}
 	}
 	modifier = {
-		ae_impact = -0.1
+		ae_impact = -0.05
 	}
 	ai_will_do = {
 		factor = 1
@@ -343,6 +439,7 @@ war_preaches_aspect = {
 	}
 	modifier = {
 		war_exhaustion = -0.03
+		manpower_recovery_speed = 0.05
 	}
 	ai_will_do = {
 		factor = 2
@@ -366,6 +463,7 @@ head_of_the_church_aspect = {
 	}
 	modifier = {
 		global_autonomy = -0.025
+		church_influence_modifier = -0.10
 	}
 	ai_will_do = {
 		factor = 2
@@ -394,6 +492,7 @@ anglican_aspect = {
 	}
 	modifier = {
 		tolerance_of_heretics_capacity = 1
+		tolerance_of_heathens_capacity = 1
 	}
 	ai_will_do = {
 		factor = 2

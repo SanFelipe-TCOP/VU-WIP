@@ -1333,7 +1333,7 @@ swe_diplomacy_mission_slot = {
 					}
 				}
 				AND = {
-					province_id = 1926
+					province_id = 1
 					NOT = {
 						trade_share = {
 							country = ROOT
@@ -1344,7 +1344,7 @@ swe_diplomacy_mission_slot = {
 			}
 		}
 		trigger = {
-			1926 = {
+			1 = {
 				trade_share = {
 					country = ROOT
 					share = 50
@@ -3700,10 +3700,11 @@ swe_religion_mission_slot = {
 							}
 							amount = 10
 						}
-						custom_trigger_tooltip = {
-							tooltip = swe_catholic_defender_of_faith_tt
-							check_variable = { which = num_converted_religion value = 30 }
-						}
+						num_of_provinces_converted = { value = 30 }
+					#	custom_trigger_tooltip = {
+					#		tooltip = swe_catholic_defender_of_faith_tt
+					#		check_variable = { which = num_converted_religion value = 30 }
+					#	}
 					}
 				}
 				AND = {
@@ -3733,10 +3734,11 @@ swe_religion_mission_slot = {
 							}
 							amount = 10
 						}
-						custom_trigger_tooltip = {
-							tooltip = swe_catholic_defender_of_faith_tt
-							check_variable = { which = num_converted_religion value = 30 }
-						}
+						num_of_provinces_converted = { value = 30 }
+					#	custom_trigger_tooltip = {
+					#		tooltip = swe_catholic_defender_of_faith_tt
+					#		check_variable = { which = num_converted_religion value = 30 }
+					#	}
 					}
 				}
 				AND = {
@@ -4047,10 +4049,11 @@ swe_catholic_mission_slot = {
 					}
 					amount = 10
 				}
-				custom_trigger_tooltip = {
-					tooltip = swe_catholic_defender_of_faith_tt
-					check_variable = { which = num_converted_religion value = 30 }
-				}
+				num_of_provinces_converted = { value = 30 }
+			#	custom_trigger_tooltip = {
+			#		tooltip = swe_catholic_defender_of_faith_tt
+			#		check_variable = { which = num_converted_religion value = 30 }
+			#	}
 			}
 		}
 		effect = {

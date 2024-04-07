@@ -1,5 +1,8 @@
 #So there are two ways of connecting this. First is to use coordinates ;start_x;start_y;stop_x;stop_y; which can be gathered by opening bmp map and then refering to how Rob has explained it in the server map room or to do it the automatic way by simply entering -1;-1;-1;-1; which will automatically connect two provinces. 
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
+7127;7129;sea;1319;-1;-1;-1;-1;Kavala-Iskece
+4705;7134;sea;3347;-1;-1;-1;-1;Dedeagac-Ainos
+7130;149;sea;3347;-1;-1;-1;-1;Dimetoka-Edirne
 8788;7731;sea;8353;-1;-1;-1;-1;Danzig-Marienburg
 43;1841;sea;7310;-1;-1;-1;-1;Danzig-Marienburg
 7257;7196;sea;3016;-1;-1;-1;-1;Dnipro-Ekaterinoslav
@@ -308,8 +311,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1822;6813;sea;7281;-1;-1;-1;-1;Suzhou-Natong
 6769;6813;sea;6709;-1;-1;-1;-1;Chongming-Natong
 6869;6811;sea;6987;-1;-1;-1;-1;Changzhou-Jianyin
-685;6755;sea;6988;-1;-1;-1;-1;Yangzhou-Taizhou
 6841;6840;sea;7280;-1;-1;-1;-1;Yancheng-Xiangshui
+729;2105;sea;8379;-1;-1;-1;-1;Bohori-Kuru
 6839;6842;sea;6698;-1;-1;-1;-1;Xiaodun-Suqian
 688;6770;sea;6720;-1;-1;-1;-1;Kaifeng-Changyuan
 692;6800;sea;6716;-1;-1;-1;-1;Huaiqing-Jiyuan

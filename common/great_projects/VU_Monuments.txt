@@ -8,11 +8,46 @@ vu_york_castle = {
 	move_days_per_unit_distance = 7
 	starting_tier = 1
 	type = monument
-	build_trigger = { is_year = 1444 OR = {	AND = {	culture = normand OR = { has_owner_culture = yes has_owner_accepted_culture = yes }	} AND = { culture_group = british OR = { has_owner_culture = yes has_owner_accepted_culture = yes } } } }
+	build_trigger = { 
+		is_year = 1068 
+		OR = {	
+			AND = {
+				OR = {
+					culture_group = british
+					culture = anglois
+					culture = normand
+				}
+				province_is_or_accepts_culture = yes
+			}
+		} 
+	}
 	on_built = { show_ambient_object = vu_york_castle }
 	on_destroyed = { hide_ambient_object = vu_york_castle }
-	can_use_modifiers_trigger = { OR = { AND = { culture = normand OR = { has_owner_culture = yes has_owner_accepted_culture = yes } } AND = { culture_group = british OR = { has_owner_culture = yes has_owner_accepted_culture = yes } } } }
-	can_upgrade_trigger = { is_year = 1444 OR = { AND = { culture = normand OR = { has_owner_culture = yes has_owner_accepted_culture = yes } } AND = { culture_group = british OR = { has_owner_culture = yes has_owner_accepted_culture = yes } } } }
+	can_use_modifiers_trigger = {
+		OR = {	
+			AND = {
+				OR = {
+					culture_group = british
+					culture = anglois
+					culture = normand
+				}
+				province_is_or_accepts_culture = yes
+			}
+		} 
+	}
+	can_upgrade_trigger = { 
+		is_year = 1268 
+		OR = {	
+			AND = {
+				OR = {
+					culture_group = british
+					culture = anglois
+					culture = normand
+				}
+				province_is_or_accepts_culture = yes
+			}
+		} 
+	}
 	keep_trigger = {}
 
 	tier_0 = {
@@ -2273,11 +2308,11 @@ vu_sofiyivka_park = {
 	move_days_per_unit_distance = 7
 	starting_tier = 0
 	type = monument
-	build_trigger = { is_year = 1780 owner = { primary_culture = ruthenian culture_group = slavic } }
+	build_trigger = { is_year = 1780 owner = { OR = { primary_culture = ruthenian culture_group = slavic } } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { primary_culture = ruthenian culture_group = slavic } }
-	can_upgrade_trigger = { is_year = 1780 owner = { primary_culture = ruthenian culture_group = slavic } }
+	can_use_modifiers_trigger = { owner = { OR = { primary_culture = ruthenian culture_group = slavic } } }
+	can_upgrade_trigger = { is_year = 1780 owner = { OR = {  primary_culture = ruthenian culture_group = slavic } } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -2531,11 +2566,11 @@ vu_piatnytska_church = {
 	move_days_per_unit_distance = 7
 	starting_tier = 1
 	type = monument
-	build_trigger = { owner = {  primary_culture = ruthenian culture_group = slavic } owner = { religion_group = christian  } }
+	build_trigger = { owner = { OR = { primary_culture = ruthenian culture_group = slavic } } owner = { religion_group = christian  } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = {  primary_culture = ruthenian culture_group = slavic } owner = { religion_group = christian  } }
-	can_upgrade_trigger = { owner = {  primary_culture = ruthenian culture_group = slavic } owner = { religion_group = christian  } }
+	can_use_modifiers_trigger = { OR = { owner = {  primary_culture = ruthenian culture_group = slavic } } owner = { religion_group = christian  } }
+	can_upgrade_trigger = { owner = {  OR = { primary_culture = ruthenian culture_group = slavic } } owner = { religion_group = christian  } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -2581,14 +2616,11 @@ vu_bilhorod_dnistrovskyi = {
 	move_days_per_unit_distance = 7
 	starting_tier = 2
 	type = monument
-	build_trigger = { owner = { OR = { primary_culture = polish primary_culture = romanian culture_group = old_latin primary_culture = ruthenian culture_group = slavic
-	} } }
+	build_trigger = { owner = {	OR = { primary_culture = polish primary_culture = romanian culture_group = old_latin primary_culture = ruthenian culture_group = slavic	primary_culture = french_romanian } } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { OR = { primary_culture = polish primary_culture = romanian culture_group = old_latin primary_culture = ruthenian culture_group = slavic
-	} } }
-	can_upgrade_trigger = { owner = { OR = { primary_culture = polish primary_culture = romanian culture_group = old_latin primary_culture = ruthenian culture_group = slavic
-	} } }
+	can_use_modifiers_trigger = { owner = {	OR = { primary_culture = polish primary_culture = romanian culture_group = old_latin primary_culture = ruthenian culture_group = slavic	primary_culture = french_romanian } } }
+	can_upgrade_trigger = { owner = {	OR = { primary_culture = polish primary_culture = romanian culture_group = old_latin primary_culture = ruthenian culture_group = slavic	primary_culture = french_romanian } } }
 	keep_trigger = {}
 
 	tier_0 = {

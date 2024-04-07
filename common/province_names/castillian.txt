@@ -322,6 +322,7 @@
 1103 = "Santa Apolonia"
 
 #Philippines
+655 = { "Palawan" "Puerto Princesa" }
 656 = { "Manila" "Ciudad de Manila" }
 657 = { "Agoo" "San Juan" }
 658 = { "Cagayan" "Nueva Segovia" }

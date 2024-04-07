@@ -1,15 +1,15 @@
 #254 - Poznan
 
 #Default
-owner = GRP
-controller = GRP
-add_core = GRP
+owner = PZN
+controller = PZN
+add_core = PZN
 capital = "Poznan"
 culture = polish
 religion = catholic
 trade_goods = cloth	#major city in Greater Poland
 hre = no
-base_tax = 6
+base_tax = 5
 base_production = 4
 base_manpower = 4
 is_city = yes

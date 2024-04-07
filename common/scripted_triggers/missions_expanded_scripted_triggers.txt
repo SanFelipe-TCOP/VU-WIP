@@ -43,6 +43,7 @@ country_has_both_paradox_and_me_missions = {
 			#	tag = SPA
 				tag = JAP
 				tag = TUR
+				tag = UNK
 			}
 		}
 		# Dharma DLC
@@ -194,7 +195,9 @@ country_has_both_paradox_and_me_missions = {
 	#	tag = MAM
 		tag = OMA
 		tag = ENG
+		tag = AVE
 		tag = GBR
+		tag = UNK
 		tag = GLH
 		tag = INC
 		# Manchurian Tribes
@@ -748,8 +751,8 @@ was_italian_minor = {
 	}
 }
 
-ME_pt_feedback_requested = { #a program will look for instances of those
-	custom_trigger_tooltip = {
-		tooltip = ME_playtester_feedback_requested
-	}
-}
+#ME_pt_feedback_requested = { #a program will look for instances of those
+#	custom_trigger_tooltip = {
+#		tooltip = ME_playtester_feedback_requested
+#	}
+#}

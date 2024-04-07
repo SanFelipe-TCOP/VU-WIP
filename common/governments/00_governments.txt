@@ -7,7 +7,7 @@ monarchy = {
 				feudalism_reform
 				autocracy_reform
 				elective_monarchy_reform
-				phoenician_elective_monarchical_republic_reform
+				carthaginian_elective_monarchical_republic_reform
 				plutocratic_reform
 				indian_sultanate_reform
 				nayankara_reform
@@ -78,6 +78,8 @@ monarchy = {
 				feudal_france_reform
 				absolutist_france_reform
 				appanage_reform
+				lowland_clan_reform
+				highland_clan_reform
 				ruthenian_tsardom
 				russian_empire_reform
 				korean_monarchy
@@ -90,6 +92,7 @@ monarchy = {
 				angevin_monarchy
 				absolute_british_monarchy
 				byzantine_autocracy_reform
+				macedonian_monarchy_reform
 				reformed_byzantine_monarchy_reform
 				margraviate_reform
 				serbian_despotate_reform
@@ -124,6 +127,8 @@ monarchy = {
 				egyptian_government_reform
 				#####EndOfVanillaReforms#####
 				#VU_and_other_additions
+				selucian_kingdom_reform
+				selucian_satrapy_reform
 				greek_lordship_reform
 				welsh_lordship_reform
 				greek_duchy_reform
@@ -146,6 +151,8 @@ monarchy = {
 				provincial_kingdom_reform
 				norman_lordship_reform
 				norman_duchy_reform
+				english_lordship_reform
+				english_duchy_reform
 				anglo_irish_monarchy_reform
 		        american_monarchy
 		        #parliamentary_monarchy
@@ -441,7 +448,7 @@ monarchy = {
 				farba_system_reform
 				inca_mountain_farms
 				renaissance_forts_reform
-				#EE Reform
+				#ME Reform
 				ME_caliphate_reform_sunni
 				ME_caliphate_reform_sunni_andalusia
 				ME_caliphate_reform_sunni_arabian
@@ -904,6 +911,8 @@ monarchy = {
 		iqta_legacy
 		daimyo_legacy
 		shogunate_legacy
+		selucian_kingdom_legacy
+		selucian_satrapy_legacy
 		indep_daimyo_legacy
 		principality_legacy
 		tsardom_legacy
@@ -967,7 +976,7 @@ monarchy = {
 		system_of_councils_reform
 		courts_of_navarra
 		elective_monarchy_reform
-		phoenician_elective_monarchical_republic_reform
+		carthaginian_elective_monarchical_republic_reform
 		elective_monarchy
 		phoenician_elective_monarchical_republic
 		# ME Reforms:
@@ -1062,6 +1071,8 @@ monarchy = {
 		shogunate
 		indep_daimyo
 		appanage_reform
+		lowland_clan_reform
+		highland_clan_reform
 		states_general_reform
 		parliamentary_reform
 		courts_of_navarra
@@ -1142,7 +1153,11 @@ republic = {
 		french_second_republic_legacy
 		french_third_republic_legacy
 		roman_diarchy
+		spartan_diarchy_legacy
 		althing_republic
+		theban_league_legacy
+		athenian_democracy_legacy
+		corinthian_oligarchy_legacy
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -1199,6 +1214,10 @@ republic = {
 				#VU
 				improved_veche_republic
 				roman_diarchy_reform
+				spartan_diarchy_reform
+				theban_league_reform
+				athenian_democracy_reform
+				corinthian_oligarchy_reform
 				german_kaiserreich_republic
 				german_kaiserreich_peasant_republic
 				althing_elite_reform
@@ -1207,8 +1226,7 @@ republic = {
 		    	national_assembly_republic_reform
 		    	french_second_republic_reform
 		    	french_third_republic_reform
-		    	#self_governing_dominion_vu_government
-		    	#self_governing_super_dominion_vu_government
+		    	self_governing_dominion_vu_government
 		    	#GE
 				florentine_republic
 				#american_government
@@ -1494,7 +1512,7 @@ republic = {
 				#1.36
 				superiority_of_the_state_reform
 				divided_aristocracy_reform
-				#EE Reforms
+				#ME Reforms
 				citizen_soldiers_reform
 				institutionalized_repbulican_army_reform
 				#VU Reforms
@@ -1577,7 +1595,7 @@ republic = {
 				equality_principle_reform
 				imperial_principle_reform
 				enlightened_principle_reform
-				#EE REFORMS
+				#ME REFORMS
 				federal_governorship_reform
 				#VU Reforms
 				mil_secret_council
@@ -1617,7 +1635,7 @@ republic = {
 				bureaucratic_aparatus_reform
 				universal_suffrage_reform
 				pirate_representation_reform
-				#EE reforms
+				#ME reforms
 				electoral_college_reform
 				direct_majority_rule_reform
 				#VU Reforms 
@@ -1644,7 +1662,7 @@ republic = {
 				#1.35
 				peters_government_reform
 				#End of 1.35
-				#EE Reforms
+				#ME Reforms
 				become_rev_empire_reform
 				vice_presidential_system_reform
 				legislative_office_selection_reform
@@ -2240,6 +2258,7 @@ theocracy = {
 				the_holy_office_reform
 				fighting_for_israel_reform
 				monastic_temples_reform
+				mission_to_crusade_reform
 			}
 		}
 		separation_of_power_theocracy = {
@@ -2518,9 +2537,9 @@ pre_dharma_mapping = {
 		government = monarchy
 		legacy_government = phoenician_elective_monarchical_republic_legacy
 	}
-	phoenician_elective_monarchical_republic_reform = { #VU - Added to 1.36.2.* by San Felipe
+	carthaginian_elective_monarchical_republic_reform = { #VU - Added to 1.36.2.* by San Felipe
 	    government = monarchy
-		legacy_government = phoenician_elective_monarchical_republic_reform_legacy
+		legacy_government = carthaginian_elective_monarchical_republic_reform_legacy
 	}
 	imperial_city = {
 		government = republic
@@ -2565,6 +2584,14 @@ pre_dharma_mapping = {
 	shogunate = {
 		government = monarchy
 		legacy_government = shogunate_legacy
+	}
+	selucian_kingdom_reform = {
+		government = monarchy
+		legacy_government = selucian_kingdom_legacy
+	} 
+	selucian_satrapy_reform = {
+		government = monarchy
+		legacy_government = selucian_satrapy_legacy
 	}
 	indep_daimyo = {
 		government = monarchy
@@ -2673,6 +2700,14 @@ pre_dharma_mapping = {
 		legacy_government = provincial_kingdom_legacy
 	}
 	norman_duchy_reform = {
+		government = monarchy
+		legacy_government = norman_duchy_legacy
+	}
+	english_lordship_reform = {
+		government = monarchy
+		legacy_government = norman_lordship_legacy
+	}
+	english_duchy_reform = {
 		government = monarchy
 		legacy_government = norman_duchy_legacy
 	}
