@@ -313,7 +313,7 @@ mnd_khmer_3 = {
 					region = south_china_sea_islands_region
 				}
 				has_building = farm_estate
-				trade_goods = grain
+				trade_goods = rice
 			}
 		}
 		effect = {
