@@ -4,7 +4,10 @@ me_hab_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -72,7 +75,10 @@ me_hab_1_branching_germany = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		NOT = {	has_country_flag = me_hab_hre_path }
 		NOT = {	has_country_flag = me_hab_german_path }
@@ -173,7 +179,10 @@ me_hab_1_hre = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_hre_path
 	}
@@ -237,7 +246,10 @@ me_hab_1_german = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_german_path
 	}
@@ -278,7 +290,10 @@ me_hab_1_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -807,7 +822,10 @@ me_hab_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -859,7 +877,10 @@ me_hab_2_branching_germany = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		NOT = {	has_country_flag = me_hab_hre_path }
 		NOT = { has_country_flag = me_hab_german_path }
@@ -1006,7 +1027,10 @@ me_hab_2_hre = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_hre_path
 	}
@@ -1122,7 +1146,10 @@ me_hab_2_german = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_german_path
 	}
@@ -1201,7 +1228,10 @@ me_hab_2_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -2370,7 +2400,10 @@ me_hab_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -2470,7 +2503,10 @@ me_hab_3_branching_germany = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		NOT = {	has_country_flag = me_hab_hre_path }
 		NOT = {	has_country_flag = me_hab_german_path }
@@ -2727,7 +2763,10 @@ me_hab_3_hre = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_hre_path
 	}
@@ -2898,7 +2937,10 @@ me_hab_3_germany = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_german_path
 	}
@@ -3155,7 +3197,10 @@ me_hab_3_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -3260,7 +3305,10 @@ me_hab_3_branching_navy = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		NOT = {	has_country_flag = me_hab_venetian_module }
 		NOT = {	has_country_flag = me_hab_modern_navy }
@@ -3386,7 +3434,10 @@ me_hab_3_navy_venetian = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_venetian_module
 	}
@@ -3445,7 +3496,10 @@ me_hab_3_navy_modern = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_modern_navy
 	}
@@ -3557,7 +3611,10 @@ me_hab_3_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -4110,7 +4167,10 @@ me_hab_3_branching_internal = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		NOT = {	has_country_flag = me_hab_mainland_development }
 		NOT = {	has_country_flag = me_hab_minorities_branch	}
@@ -4251,7 +4311,10 @@ me_hab_3_mainland_focus = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_mainland_development
 	}
@@ -4328,7 +4391,10 @@ me_hab_3_minorities_focus = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_minorities_branch
 	}
@@ -4422,7 +4488,10 @@ me_hab_3_branching_modern_state = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		NOT = {	has_country_flag = me_hab_mainland_development }
 		NOT = {	has_country_flag = me_hab_minorities_branch }
@@ -4475,7 +4544,10 @@ me_hab_3_modern_state_mainland = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_mainland_development
 	}
@@ -4517,7 +4589,10 @@ me_hab_3_modern_state_minorities = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_minorities_branch
 	}
@@ -4559,7 +4634,10 @@ me_hab_3_enlightenment = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -4661,7 +4739,10 @@ me_hab_4_branching_germany = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		NOT = {	has_country_flag = me_hab_hre_path }
 		NOT = {	has_country_flag = me_hab_german_path }
@@ -4752,7 +4833,10 @@ me_hab_4_hre = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_hre_path
 	}
@@ -4806,7 +4890,10 @@ me_hab_4_germany_branch = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_german_path
 	}
@@ -4858,7 +4945,10 @@ me_hab_4_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -5032,7 +5122,10 @@ me_hab_4_navy = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		NOT = {	has_country_flag = me_hab_venetian_module }
 		NOT = {	has_country_flag = me_hab_modern_navy }
@@ -5271,7 +5364,10 @@ me_hab_4_venetian_module = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_venetian_module
 	}
@@ -5411,7 +5507,10 @@ me_hab_4_modern_navy = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_modern_navy
 	}
@@ -5522,7 +5621,10 @@ me_hab_4_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -5939,7 +6041,10 @@ me_hab_4_internal_development = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		NOT = {	has_country_flag = me_hab_mainland_development }
 		NOT = {	has_country_flag = me_hab_minorities_branch }
@@ -6161,7 +6266,10 @@ me_hab_4_mainland_focus = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_mainland_development
 	}
@@ -6270,7 +6378,10 @@ me_hab_4_minorities_focus = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_minorities_branch
 	}
@@ -6398,7 +6509,10 @@ me_hab_4_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -6460,7 +6574,10 @@ me_hab_5 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -6993,7 +7110,10 @@ me_hab_5_navy = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		NOT = {	has_country_flag = me_hab_venetian_module }
 		NOT = {	has_country_flag = me_hab_modern_navy }
@@ -7066,7 +7186,10 @@ me_hab_5_venetian_main = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_venetian_module
 	}
@@ -7108,7 +7231,10 @@ me_hab_5_modern_navy = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_modern_navy
 	}
@@ -7148,7 +7274,10 @@ me_hab_5_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes
@@ -7251,7 +7380,10 @@ me_hab_5_internal_development = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		NOT = {	has_country_flag = me_hab_mainland_development }
 		NOT = {	has_country_flag = me_hab_minorities_branch }
@@ -7428,7 +7560,10 @@ me_hab_5_mainland_focus = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_mainland_development
 	}
@@ -7490,7 +7625,10 @@ me_hab_5_minorities_branch = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		has_country_flag = me_hab_minorities_branch
 	}
@@ -7626,7 +7764,10 @@ me_hab_5_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT #VU - SF addition
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 	has_country_shield = yes

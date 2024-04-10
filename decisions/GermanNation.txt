@@ -191,7 +191,10 @@
 #		effect = {
 #			if = {
 #				limit = {
-#					tag = HAB
+#					OR = {
+#			        	tag = HAB
+#			        	tag = AUT #VU - SF addition
+#			        }
 #				}
 #				country_event = { id =  ME_Austria_Events.74 }
 #			}
@@ -245,7 +248,10 @@
 #			factor = 1
 #			modifier = {
 #				factor = 0
-#				tag = HAB
+#				OR = {
+#			       	tag = HAB
+#			        tag = AUT #VU - SF addition
+#			    }
 #				NOT = { has_country_flag = me_hab_easier_german_formation } #PDX, you will not stop me
 #			}
 #		}

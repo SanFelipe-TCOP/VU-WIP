@@ -172,6 +172,7 @@ BYZ_historical_interest_against_ottomans = {
 		tag = LIT
 		tag = HUN
 		tag = HAB
+		tag = AUT #VU - SF addition
 		tag = ALB
 	}
 }
