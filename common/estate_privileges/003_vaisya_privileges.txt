@@ -1007,6 +1007,7 @@ estate_vaisyas_khmer_irrigation = {
 		OR = {
 			tag = LNA
 			tag = KHM
+			tag = KME
 			has_estate_privilege = estate_vaisyas_khmer_irrigation
 		}
 	}

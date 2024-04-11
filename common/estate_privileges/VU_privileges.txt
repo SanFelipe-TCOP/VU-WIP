@@ -6503,7 +6503,8 @@ estate_nobles_very_strong_duchies = {
 					is_subject_of_type = religious_march
 					is_subject_of_type = agricultural_march 
 					is_subject_of_type = medieval_vassal 
-					#is_subject_of_type = silesian_duke   
+					#is_subject_of_type = silesian_duke
+					is_subject_of_type = mandala_trade_vassal
 				}
 			}
 			amount = 3
@@ -6538,6 +6539,7 @@ estate_nobles_very_strong_duchies = {
 							is_subject_of_type = agricultural_march 
 							is_subject_of_type = medieval_vassal 
 							#is_subject_of_type = silesian_duke
+							is_subject_of_type = mandala_trade_vassal
 						}
 					}
 				amount = 4
@@ -6585,7 +6587,8 @@ estate_nobles_extremely_strong_duchies = {
 					is_subject_of_type = religious_march
 					is_subject_of_type = agricultural_march 
 					is_subject_of_type = medieval_vassal 
-					#is_subject_of_type = silesian_duke   
+					#is_subject_of_type = silesian_duke
+					is_subject_of_type = mandala_trade_vassal
 				}
 			}
 		}
@@ -6615,7 +6618,8 @@ estate_nobles_extremely_strong_duchies = {
 							is_subject_of_type = religious_march
 							is_subject_of_type = agricultural_march 
 							is_subject_of_type = medieval_vassal 
-							#is_subject_of_type = silesian_duke 
+							#is_subject_of_type = silesian_duke
+							is_subject_of_type = mandala_trade_vassal
 						}
 					}
 				}
