@@ -15,7 +15,7 @@ is_city = yes
 hre = no
 
 #Claimants
-add_core = VGT
+add_core = VTG
 add_core = SWE
 
 #Buildings

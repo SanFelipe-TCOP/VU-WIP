@@ -161,6 +161,7 @@ country_has_both_paradox_and_me_missions = {
 		tag = ARA
 	#	tag = CAS
 		tag = HAB
+		tag = AUT #VU - SF addition
 		tag = CRI
 		tag = DAN
 		tag = FRA

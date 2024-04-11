@@ -2865,7 +2865,10 @@ on_monarch_death = {
 	
 	if = {
 		limit = {
-			tag = HAB
+			OR = {
+				tag = HAB
+				tag = AUT #VU - SF addition
+			}
 		}
 		country_event = { id = me_austria_nobles.1 }
 	}

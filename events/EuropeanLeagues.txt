@@ -486,6 +486,7 @@ country_event = {
 					tag = FRA
 					tag = BFR
 					tag = HAB
+					tag = AUT #VU - SF addition
 					tag = TUS
 					tag = MLO
 					is_emperor = yes

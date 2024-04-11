@@ -18,7 +18,10 @@ country_decisions = {
 		potential = {
 			normal_or_historical_nations = yes
 			NOT = { has_country_flag = formed_austrian_empire_flag }
-			tag = HAB
+			OR = {
+				tag = HAB
+				tag = AUT #VU - SF addition
+			}
 			capital_scope = { is_part_of_hre = no }
 		}
 
@@ -63,7 +66,10 @@ country_decisions = {
 			set_country_flag = formed_austrian_empire_flag
 			hidden_effect = {
 				every_province = {
-					remove_core = HAB
+					OR = {
+						remove_core = HAB
+						remove_core = AUT #VU - SF addition
+					}
 				}
 			}
 		}
@@ -80,6 +86,7 @@ country_decisions = {
 		potential = {
 		    OR = {
 				tag = HAB
+				tag = AUT #VU - SF addition
 				tag = AUE
 			}
 			normal_or_historical_nations = yes
@@ -578,7 +585,10 @@ country_decisions = {
 			restore_country_name_effect = yes
 			if = {
 				limit = {
-					tag = HAB
+					OR = {
+						tag = HAB
+						tag = AUT #VU - SF addition
+					}
 				}
 				country_event = { id =  ME_Austria_Events.74 }
 				hidden_effect = {
@@ -630,7 +640,10 @@ country_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				tag = HAB
+				OR = {
+					tag = HAB
+					tag = AUT #VU - SF addition
+				}
 				NOT = { has_country_flag = me_hab_easier_german_formation } #PDX, you will not stop me
 			}
 		}

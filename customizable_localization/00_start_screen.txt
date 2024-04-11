@@ -135,7 +135,10 @@ defined_text = {
 	text = {
         localisation_key = string_start_title_austria
         trigger = {
-			tag = HAB
+			OR = {
+				tag = HAB
+				tag = AUT #VU - SF addition
+			}
 			NOT = { is_year = 1452 }
 		}
     }
@@ -951,7 +954,10 @@ defined_text = {
 	text = { #Austria
 		localisation_key = string_start_austria
 		trigger = {
-			tag = HAB
+			OR = {
+				tag = HAB
+				tag = AUT #VU - SF addition
+			}
 			NOT = { is_year = 1457 }
 		}
 	}

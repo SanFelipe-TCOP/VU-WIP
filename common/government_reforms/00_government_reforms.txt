@@ -1495,7 +1495,9 @@ austrian_archduchy = {
 	potential = {
 		OR = {
 			tag = HAB
+			tag = AUT        #VU - SF addition
 			was_tag = HAB
+			was_tag = AUT    #VU - SF addition
 			has_reform = austrian_archduchy_reform
 		}
 	}

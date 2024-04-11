@@ -55,7 +55,17 @@ eyalet_dynamic_name_change_effect = {
 	if = { limit = { tag = HUN } eyalet_name_effect = { tag = EY0 } }
 	if = { limit = { tag = SLO } eyalet_name_effect = { tag = EY1 } }
 	if = { limit = { tag = TRA } eyalet_name_effect = { tag = EY2 } }
-	if = { limit = { tag = HAB } eyalet_name_effect = { tag = EY3 } }
+	if = { 
+		limit = { 
+			OR = {
+				tag = HAB
+				tag = AUT                #VU - SF addition
+			} 
+		} 
+		eyalet_name_effect = { 
+			tag = EY3 
+		} 
+	}
 	if = { limit = { tag = MLO } eyalet_name_effect = { tag = EY4 } }
 	if = { limit = { tag = SIC } eyalet_name_effect = { tag = EY5 } }
 	if = { limit = { tag = TUS } eyalet_name_effect = { tag = EY6 } }

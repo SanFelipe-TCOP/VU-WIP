@@ -4242,6 +4242,7 @@ vu_hre_stem_duchy_check = {
 	NOT = { tag = GER }
 	NOT = { tag = PRU }
 	NOT = { tag = HAB }
+	NOT = { tag = AUT } #VU - SF addition
 	NOT = { tag = LOT }	#VU add Lothringia
 	#Stem Duchies
 	NOT = { tag = FRE }	#VU add united Frisia
@@ -4265,6 +4266,7 @@ vu_hre_stem_duchy_check = {
 	NOT = { was_tag = GER }
 	NOT = { was_tag = PRU }
 	NOT = { was_tag = HAB }
+	NOT = { was_tag = AUT } #VU - SF addition
 	NOT = { was_tag = LOT }
 	NOT = { was_tag = FRE }
 	NOT = { was_tag = SAX }
