@@ -1214,6 +1214,7 @@ age_of_revolutions = {
 			allow = {
 				OR = {
 					tag = HAB
+					tag = AUT    #VU - SF addition
 					tag = HLR
 				}
 			}

@@ -18,7 +18,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 27
+			#adm_tech = 27 #VU - Hashed out by SF
 			NOT = { exists = HAB }
 			has_regency = no
 			is_free_or_tributary_trigger = yes

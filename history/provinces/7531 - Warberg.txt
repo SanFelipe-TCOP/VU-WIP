@@ -16,12 +16,6 @@ capital = "Warberg"
 is_city = yes
 hre = yes
 
-
-
-
-
-
-
 #Documented 1080 AD due to missionary efforts in the area
 1803.1.1 = {
 	owner = BAV

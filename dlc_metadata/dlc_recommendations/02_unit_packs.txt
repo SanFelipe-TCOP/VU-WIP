@@ -282,6 +282,7 @@ dlc029 = {
 		trigger = {
 			OR = {
 				tag = HAB
+				tag = AUT #VU - SF addition
 				tag = SPA
 				tag = CAS
 				tag = BAV
@@ -463,6 +464,7 @@ dlc053 = {
 				tag = CAS
 				tag = NAV
 				tag = HAB
+				tag = AUT #VU - SF addition
 				tag = POL
 				tag = PLC
 			}

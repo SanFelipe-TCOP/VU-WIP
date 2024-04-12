@@ -1317,7 +1317,8 @@ holy_roman_electors_monarchy = {
 		government = monarchy
 		is_elector = yes
 		is_emperor = no
-		NOT = { tag = HAB } #Archdukes
+		NOT = { tag = HAB }        #Archdukes
+		NOT = { tag = AUT }    #VU - SF addition
 	}
 }
 
@@ -2393,7 +2394,10 @@ austrian_monarchy = {
 	}
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT    #VU - SF addition
+		}
 		government = monarchy
 	}
 }

@@ -16,12 +16,6 @@ base_manpower = 2
 is_city = yes
 add_core = THU
 
-
-
-
-
-
-
 1445.9.10 = { owner = THU controller = THU add_core = THU }
 1539.1.1 = { religion = protestant }
 1547.5.19 = {

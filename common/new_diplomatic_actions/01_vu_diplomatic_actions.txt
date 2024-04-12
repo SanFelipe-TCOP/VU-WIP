@@ -130,6 +130,7 @@ vu_create_silesian_duchy = {
 		OR = {
 			tag = BOH
 			tag = HAB
+			tag = AUT #VU - SF addition
 			tag = POL
 			tag = DWA
 			tag = PLC

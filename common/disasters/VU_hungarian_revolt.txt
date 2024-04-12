@@ -10,7 +10,10 @@ ME_hungarian_revolt = {
 			}
 		}
 		is_free_or_tributary_trigger = yes
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT    #VU - SF addition
+		}
 		NOT = { exists = HUN }
 		current_age = age_of_revolutions
 		NOT = { has_country_flag = me_hab_crushed_hungarian_revolt }
