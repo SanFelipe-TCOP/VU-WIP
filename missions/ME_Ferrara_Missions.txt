@@ -968,6 +968,7 @@ ferrara_mission_5 = {
 					limit = {
 						emperor = {
 							NOT = { tag = HAB }
+							NOT = { tag = AUT }					#Addition by Altan
 						}
 					}
 					OR = {
@@ -1015,6 +1016,7 @@ ferrara_mission_5 = {
 			any_country = {
 				NOT = { is_emperor = yes }
 				NOT = { tag = HAB }
+				NOT = { tag = AUT }					#Addition by Altan
 				NOT = { tag = PAP }
 				total_development = ROOT
 				army_strength = {

@@ -107,7 +107,10 @@ country_event = {
 		name = "EVTOPTA9075"
 		if = {
 			limit = {
-				tag = HAB
+				OR = {
+					tag = HAB
+					tag = AUT			#Addition by Altan
+				}
 			}
 			country_event = { id =  ME_Austria_Events.74 }
 		}

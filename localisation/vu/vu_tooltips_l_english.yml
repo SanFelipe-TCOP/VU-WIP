@@ -29,7 +29,7 @@
  rmn_has_latin_accepted:0 "Has accepted atleast one culture from the §YFrench§!, §YIberian§!, and §YItalian§! culture groups"
  rmn_roman_britain:0 "Own all of §YBritannia§!"
  rmn_roman_britain_conquest:0 "Will gain permanent claims on all provinces within the old Roman Province of §YBritannia§!"
- vu_marry_romanian:0 "We will fall under a §YPersonal Union§! with §YRomania§!.
+ vu_marry_romanian:0 "We will fall under a §YPersonal Union§! with §YRomania§!."
  rom_remove2:0 "Consolidates all Country Modifiers given by the §YWallachian§!, §YMoldavian§!, and  §YRomanian§! Mission trees into one §GModifier§!"
  roman_culture_provinces_tooltip:1 "All provinces of the Italian Culture Group will now have §YRoman§! Culture."
  vu_roman_revival_finished_manpower:0 "from owned provinces, which are of §YOld Latin§! culture"

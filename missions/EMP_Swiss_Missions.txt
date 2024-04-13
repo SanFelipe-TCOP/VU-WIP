@@ -447,7 +447,10 @@ swiss_missions_4 = {
 		icon = protect_against_austria
 		required_missions = { emp_swi_mountain_forts }
 		provinces_to_highlight = {
-			owner = { tag = HAB }
+			OR = {
+				owner = { tag = HAB }
+				owner = { tag = AUT }				#Addition by Altan
+			}
 		}
 		position = 3
 		trigger = {

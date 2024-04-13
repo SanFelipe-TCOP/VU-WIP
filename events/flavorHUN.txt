@@ -2826,7 +2826,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT  #Addition by Altan
+		}
 		NOT = { exists = HUN }
 		any_owned_province = {
 			culture = hungarian
@@ -2918,7 +2921,10 @@ country_event = {
 				OR = {
 					NOT = { prestige = 0 }
 					emperor = {
-						NOT = { tag = HAB }
+						OR = {
+							NOT = { tag = HAB }
+							NOT = { tag = AUT }			#Addition by Altan
+						}
 					}
 				}
 				emperor = {
@@ -3068,7 +3074,10 @@ country_event = {
 		}
 		if = {
 			limit = {
-				tag = HAB
+				OR = {
+					tag = HAB
+					tag = AUT				#Addition by Altan
+				}
 			}
 			austria_proper_area = {
 				limit = {

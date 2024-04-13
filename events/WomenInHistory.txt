@@ -297,7 +297,10 @@ country_event = {
 	picture = wihgfx_FEMALE_RULER_eventPicture
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT						#Addition by Altan
+		}
 		is_year = 1700
 		NOT = {
 			is_year = 1800

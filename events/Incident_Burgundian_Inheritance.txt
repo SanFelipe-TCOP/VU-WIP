@@ -833,9 +833,15 @@ country_event = {
 						army_size = ROOT
 						total_own_and_non_tributary_subject_development = ROOT
 						num_of_allies = 5
-						AND = {
-							tag = HAB
-							senior_union_with = HUN
+						OR = {
+							AND = {
+								tag = HAB
+								senior_union_with = HUN
+							}
+							AND = {						#Addition by Altan
+								tag = AUT
+								senior_union_with = HUN
+							}
 						}
 					}
 				}
