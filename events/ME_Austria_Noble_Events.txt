@@ -85,7 +85,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT					#Addition by Altan
+		}
 		NOT = { has_country_flag = me_hab_von_raab_reforms }
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		ai = no
@@ -152,7 +155,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT					#Addition by Altan
+		}
 		NOT = { has_country_flag = me_hab_von_raab_reforms }
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		ai = no
