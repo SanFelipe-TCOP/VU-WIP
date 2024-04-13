@@ -249,6 +249,7 @@ the_two_sicilies_missions_1 = {
 					hre_size = 1
 					emperor = {
 						NOT = { tag = HAB }
+						NOT = { tag = AUT }				#Addition by Altan
 					}
 				}
 				add_casus_belli = {

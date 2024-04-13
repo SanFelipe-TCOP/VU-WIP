@@ -709,6 +709,7 @@ milan_missions_2 = {
 							NOT = { tag = CAS }
 							NOT = { tag = SPA }
 							NOT = { tag = HAB }
+							NOT = { tag = AUT }					#Addition by Altan
 							NOT = { tag = TUR }
 							alliance_with = ROOT
 						}

@@ -683,6 +683,7 @@ mantua_mission_4 = {
 					limit = {
 						emperor = {
 							NOT = { tag = HAB }
+							NOT = { tag = AUT }						#Addition by Altan
 						}
 					}
 					OR = {
@@ -753,6 +754,7 @@ mantua_mission_4 = {
 			any_country = {
 				NOT = { is_emperor = yes }
 				NOT = { tag = HAB }
+				NOT = { tag = AUT }						#Addition by Altan
 				NOT = { tag = PAP }
 				total_development = ROOT
 				OR = {

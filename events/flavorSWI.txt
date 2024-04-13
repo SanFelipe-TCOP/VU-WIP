@@ -33,7 +33,10 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			tag = HAB
+			OR = {
+				tag = HAB
+				tag = AUT			#Addition by Altan
+			}
 		}
 		modifier = {
 			factor = 0.8

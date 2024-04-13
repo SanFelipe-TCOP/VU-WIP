@@ -3220,7 +3220,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT					#Addition by Altan
+		}
 		is_year = 1450
 		134 = {
 			owned_by = ROOT
@@ -3318,7 +3321,10 @@ country_event = { #Cilli
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT					#Addition by Altan
+		}
 		is_year = 1445
 	}
 
@@ -3342,7 +3348,10 @@ country_event = { #Transylvanian Revolt
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT					#Addition by Altan
+		}
 		is_year = 1475
 		NOT = { has_country_flag = me_hab_no_transylvania_revolt }
 		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -3391,7 +3400,10 @@ country_event = { #The Neapolitan Throne
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT						#Addition by Altan
+		}
 		is_year = 1480
 		NAP = {
 			exists = yes
@@ -3424,7 +3436,10 @@ country_event = { #The Last Knight
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT						#Addition by Altan
+		}
 		is_year = 1470
 		NOT = { has_heir_flag = me_charles_court }
 	}
