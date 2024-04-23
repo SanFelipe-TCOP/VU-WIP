@@ -851,13 +851,13 @@
  GE_reform_cycle_monarchy.303.c: "Move the people of our empire to lessen the draw of apostasy."
  
  GE_reform_cycle_monarchy.311.t: "National Engineering"
- GE_reform_cycle_monarchy.311.d: "The  castles and fortresses of our Kingdom have resulted in many engineers who help build their walls and keep them in tact.  Their efforts could be put to many great things in our realm."
+ GE_reform_cycle_monarchy.311.d: "The castles and fortresses of our Kingdom have resulted in many engineers who help build their walls and keep them in tact.  Their efforts could be put to many great things in our realm."
  GE_reform_cycle_monarchy.311.a: "Bring great engineers to the capital."
  GE_reform_cycle_monarchy.311.b: "Improve our national defensive capabilities." 
  GE_reform_cycle_monarchy.311.c: "Grand Engineering."
  
  GE_reform_cycle_monarchy.321.t: "Capital Expansion"
- GE_reform_cycle_monarchy.321.d: "The centralization policies of our dynasty have led to much power being amassed in our capital. We have many ways to express this newfound strength.  What do you suggest, Sire?"
+ GE_reform_cycle_monarchy.321.d: "The centralization policies of our dynasty have led to much power being amassed in our capital. We have many ways to express this newfound strength. What do you suggest, Sire?"
  GE_reform_cycle_monarchy.321.a: "Invest in the merchant and artisan quarter."
  GE_reform_cycle_monarchy.321.b: "Increase the royal guard." 
  GE_reform_cycle_monarchy.321.c: "Invest in more streets and poor houses."
@@ -870,7 +870,7 @@
  GE_reform_cycle_monarchy.331.e: "United Militaries."
  
  GE_reform_cycle_monarchy.341.t: "Adventure on the High Seas"
- GE_reform_cycle_monarchy.341.d: "Grand  sagas were written about valiant heroes since the ancient times.  However, it is the merchants who often meet the people of many realms, see sights unheard of in our lands and go forth and great risk to themselves and their familial wealth in an attempt to earn even greater fortune."
+ GE_reform_cycle_monarchy.341.d: "Grand  sagas were written about valiant heroes since the ancient times. However, it is the merchants who often meet the people of many realms, see sights unheard of in our lands and go forth and great risk to themselves and their familial wealth in an attempt to earn even greater fortune."
  GE_reform_cycle_monarchy.341.a: "Write a great Courtly Saga."
  GE_reform_cycle_monarchy.341.b: "Bring a greaet man to court." 
  GE_reform_cycle_monarchy.341.c: "Hire retired foreign soldiers to learn of foreign military organization across the world."
@@ -892,7 +892,7 @@
  GE_reform_cycle_monarchy.351.d: "In their adventures across the world our colonial explorers have brought back tales of productive plants, strange artifacts and glorious monuments.  We can press upon them to deliver more, if we so desire. What would you like us to do, sire?"
  GE_reform_cycle_monarchy.351.a: "Have them bring back a strange item of a foreign culture."
  GE_reform_cycle_monarchy.351.b: "Have plants to be brought to our lands and studied." 
- GE_reform_cycle_monarchy.351.c: "Bring  a large monument from our overseas territories to our capital."
+ GE_reform_cycle_monarchy.351.c: "Bring a large monument from our overseas territories to our capital."
  
  ###Republics###
  

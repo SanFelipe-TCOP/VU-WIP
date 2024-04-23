@@ -12,9 +12,7 @@ christian = {
 	# Emblem texture: game/gfx/interface/client_state_symbols_large.dds
 	# Can be overridden per religion.
 	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 57 }
-
-	
+	flag_emblem_index_range = { 1 57 }	
 	
 	catholic = {
 		color = { 221 221 219 }
@@ -24,15 +22,20 @@ christian = {
 			protestant
 			hussite
 		}
+		#VU - Start of Don Brom's stuff
 		country = {
-			tolerance_own = 1
-			global_heathen_missionary_strength = 0.01
+			tolerance_own = 1							#helps with rebels and stuff, feels right in here
+			global_heathen_missionary_strength = 0.02	#buffed the srength of the missionaries against heathens as they were quite good at converting them
+			diplomatic_reputation = 1  					#diplomacy of the cathloics was quite good
+			global_tax_income = 12  					#flat tax bonus, doesnt stack as modifiers do and helps smaller nations a lot while doing little for the big boys
 		}
 		
 		country_as_secondary = {
-			diplomatic_reputation = 1
-			advisor_pool = 1
+			tolerance_own = 0.5  		#secondary modifiers are meant to be weaker versions of the original religion, not something completely different
+			diplomatic_reputation = 0.5
+			global_tax_income = 6
 		}
+		#VU - End of Don Brom's stuff
 		
 		hre_religion = yes
 		
@@ -65,15 +68,18 @@ christian = {
 				global_religious_conversion_resistance = 0.25
 				global_institution_spread = -0.25
 				global_missionary_strength = 0.02
+				#VU - Start of Don Brom's stuff*
+				improve_relation_modifier = -0.15
 			}
 			neutral = {
-				global_religious_conversion_resistance = -0.33
+				global_religious_conversion_resistance = 0.33
 			}
 			concilatory = {
-				relation_with_heretics = 10
+				relation_with_heretics = 20
 				global_religious_conversion_resistance = 0.25
-				global_heretic_missionary_strength = -0.05
-				improve_relation_modifier = 0.25
+				global_heretic_missionary_strength = -0.02
+				global_institution_spread = 0.25
+				improve_relation_modifier = 0.15
 			}
 			
 			#Council of Trent Concessions
@@ -84,17 +90,18 @@ christian = {
 						global_heretic_missionary_strength  = 0.02
 					}	
 					concilatory = {
-						relation_with_heretics = 10
+						relation_with_heretics = 20
 						tolerance_heretic = 2
+						tolerance_of_heretics_capacity = 1
 					}
 				}
 				second_concession = {
 					harsh = {
 						relation_with_heretics = -20
-						institution_spread_from_true_faith = 0.30
+						institution_spread_from_true_faith = 0.15
 					}	
 					concilatory = {
-						relation_with_heretics = 10
+						relation_with_heretics = 20
 						global_institution_spread = 0.10
 					}
 				}
@@ -104,20 +111,21 @@ christian = {
 						manpower_in_true_faith_provinces  = 0.1
 					}	
 					concilatory = {
-						relation_with_heretics = 10
-						global_manpower_modifier = 0.05
+						relation_with_heretics = 20
+						global_manpower_modifier = 0.1
 					}
 				}
 				fourth_concession = {
 					harsh = {
 						relation_with_heretics = -20
-						warscore_cost_vs_other_religion  = -0.10
+						warscore_cost_vs_other_religion  = -0.05
 					}	
 					concilatory = {
-						relation_with_heretics = 10
-						curia_powers_cost = -0.10
+						relation_with_heretics = 20
+						curia_powers_cost = -0.15
 					}
 				}
+				#VU - End of Don Brom's stuff*
 			}
 			
 			# Papal Actions below!
@@ -279,7 +287,7 @@ christian = {
 					NOT = { mercantilism = 100 }
 				}
 				effect = {
-					add_mercantilism = 2
+					add_mercantilism = 2 #Was 1 but doubled by Don
 				}
 				ai_will_do = {
 					factor = 1
@@ -315,7 +323,7 @@ christian = {
 		color = { 99 235 232 }
 		icon = 71
 		allowed_conversion = {
-			arian
+			#arian
 			catholic
 			bogomilist_new
 		}
@@ -552,19 +560,30 @@ christian = {
 		}
 
 		country = {
-			development_cost = -0.15 #Increased this from -0.1 to -0.15 - SF
-			technology_cost = -0.15 #Increased this to -0.15 from -0.05 - SF
-			morale_damage = 0.035
+			#VU Start of Don's stuff
+			development_cost = -0.1
+			technology_cost = -0.05 #Don't remove this - SF
+			morale_damage = 0.025
 			religious_unity = 0.15
 			tolerance_own = 1
-			idea_cost = -0.15 #Increased from -0.1 to -0.15 - SF
 			#debuffs
-			church_power_modifier = -0.1 #Decreased this to -0.1 from -0.15 - SF
-			church_influence_modifier = 0.15 #Increased this to 0.15 from 0.1 - SF
+			church_power_modifier = -0.15 #might have to decrease, it might be too bit hard to activate any powers
+			church_influence_modifier = 0.1
+			#VU End of Don's stuff
+			#development_cost = -0.15 #Increased this from -0.1 to -0.15 - SF
+			#technology_cost = -0.15 #Increased this to -0.15 from -0.05 - SF
+			#morale_damage = 0.035
+			#religious_unity = 0.15
+			#tolerance_own = 1
+			#idea_cost = -0.15 #Increased from -0.1 to -0.15 - SF
+			##debuffs
+			#church_power_modifier = -0.1 #Decreased this to -0.1 from -0.15 - SF
+			#church_influence_modifier = 0.15 #Increased this to 0.15 from 0.1 - SF
 		}
 		
 		country_as_secondary = {
-			idea_cost = -0.1 #Don't remove this - SF
+			technology_cost = -0.025 #Don't remove this - SF
+			#idea_cost = -0.1 #Don't remove this - SF
 			fire_damage_received = -0.05
 			tolerance_own = 0.5
 			religious_unity = 0.1
@@ -575,6 +594,7 @@ christian = {
 		}
 		
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
+
 		on_convert = {
 			change_religion = anglican
 			add_prestige = -100
@@ -625,7 +645,8 @@ christian = {
 						}
 					}
 				}
-				add_years_of_income = 4.0 #Increased from 3.0
+				add_years_of_income = 5.0 #increased to 5 by don
+				#add_years_of_income = 4.0 #Increased from 3.0
 				hidden_effect = {
 					random_owned_province = {
 						limit = {
@@ -642,16 +663,24 @@ christian = {
 		}
 		
 		aspects = {
-			divorce_consort_aspect
-			gain_consort_aspect
-			dissolve_monasteries_aspect
-			monopoly_aspect
-			stability_aspect
-			innovativeness_aspect
-			expel_heretics_aspect
-			diplomats_of_the_reformation_aspect
-			icons_of_the_church_aspect
-			spread_the_book_of_common_prayer
+			#Vu - Don's stuff
+			vu_stability_aspect
+			vu_innovativeness_aspect
+			vu_expel_heretics_aspect
+			vu_diplomats_of_the_reformation_aspect
+			vu_spread_the_book_of_common_prayer
+			vu_bibles_for_soldiers
+			#Vu - End of Don's stuff
+			#divorce_consort_aspect
+			#gain_consort_aspect
+			#dissolve_monasteries_aspect
+			#monopoly_aspect
+			#stability_aspect
+			#innovativeness_aspect
+			#expel_heretics_aspect
+			#diplomats_of_the_reformation_aspect
+			#icons_of_the_church_aspect
+			#spread_the_book_of_common_prayer
 		}
 		aspects_name = ANGLICAN_ASPECTS
 		
@@ -682,12 +711,14 @@ christian = {
 		country = {
 			#buffs
 			shock_damage_received = -0.05
-			global_heretic_missionary_strength = 0.02							   
-			land_morale = 0.05 #Was 0.1 but halved by don
+			global_heretic_missionary_strength = 0.02
+			land_morale = 0.05 #halved by don			   
+			#land_morale = 0.05 #Was 0.1 but halved by don
 			military_tactics = 0.1 #hussites were among the first to use guns, and used innovative tactics using wagons (might have to remove this if it proves to be too OP)
 			#debuffs
 			tolerance_heretic = -2
-			naval_forcelimit_modifier = -0.15 #not the best swimmers XD
+			naval_forcelimit_modifier = -0.10 #not the best swimmers XD
+			#naval_forcelimit_modifier = -0.15 #not the best swimmers XD
 		}
 		
 		country_as_secondary = {
@@ -737,7 +768,8 @@ christian = {
 								religion = hussite
 								is_reformation_center = yes
 							}
-							amount = 1 #Lowered this to 1
+							amount = 2 #Do not touch this - DON
+							#amount = 1 #Lowered this to 1
 						}
 					}
 				}
@@ -763,11 +795,13 @@ christian = {
 								religion = hussite
 								is_reformation_center = yes
 							}
-							amount = 1 #Lowered this to 1
+							amount = 2 #Do not touch this - DON
+							#amount = 1 #Lowered this to 1
 						}
 					}
 				}
-				add_years_of_income = 3.0
+				add_years_of_income = 5.0 #increased to 5 by don
+				#add_years_of_income = 3.0
 				hidden_effect = {
 					random_owned_province = {
 						limit = {
@@ -930,7 +964,8 @@ christian = {
 						}
 					}
 				}
-				add_years_of_income = 3.0
+				add_years_of_income = 5.0 #increased to 5 by don
+				#add_years_of_income = 3.0
 				hidden_effect = {
 					random_owned_province = {
 						limit = {
@@ -1032,7 +1067,8 @@ christian = {
 								religion = reformed
 								is_reformation_center = yes
 							}
-							amount = 5
+							amount = 3 #Don
+							#amount = 5
 						}
 					}
 				}
@@ -1058,11 +1094,13 @@ christian = {
 								religion = reformed
 								is_reformation_center = yes
 							}
-							amount = 5
+							amount = 3 #Don
+							#amount = 5
 						}
 					}
 				}
-				add_years_of_income = 3.0
+				add_years_of_income = 5.0 #increased to 5 by don
+				#add_years_of_income = 3.0
 				hidden_effect = {
 					random_owned_province = {
 						limit = {
@@ -1350,27 +1388,32 @@ christian = {
 			bogomilist_new
 			jewish
 		}
+		#VU - Don's 
 		country = {
-			tolerance_own = 2
-			stability_cost_modifier = -0.1
+			stability_cost_modifier = -0.15
+			yearly_corruption = -0.1
+			advisor_pool = 1
+			tolerance_own = 1
 			adm_tech_cost_modifier = -0.05
-			local_missionary_strength = 0.01
 			global_unrest = -1 
 			may_recruit_female_generals = yes
 			female_advisor_chance = 0.2
 		}
 		country_as_secondary = {
-			stability_cost_modifier = -0.15
-			local_missionary_strength = -0.01
-			tolerance_own = -1
+			tolerance_own = 1
+			stability_cost_modifier = -0.1
+			adm_tech_cost_modifier = -0.05
+			global_unrest = -1 
+			may_recruit_female_generals = yes
+			female_advisor_chance = 0.2
 			yearly_corruption = -0.1
 			advisor_pool = 1
 		}
 		province = {
 			development_cost = 0.05
+			local_missionary_strength = 0.01
 		}
-	
-		hre_heretic_religion = yes
+		#VU - End of Don's 
 		
 		heretic = { BOGOMILIST WALDENSIAN FRATICELLI HUSSITE LOLLARD SOCINIAN }
 		
@@ -1782,25 +1825,24 @@ christian = {
 			hussite 
 			catholic
 		}
+
+		#VU - Don's
 		country = {
-			local_missionary_strength = 0.005
-			tolerance_own = 1
-			adm_tech_cost_modifier = -0.05
 			global_unrest = -1
 			stability_cost_modifier = -0.1
-			shock_damage_received = -0.15
+			shock_damage_received = -0.05
 			global_manpower_modifier = 0.15
-			build_cost = 0.1
-			build_time = 0.1
 			global_tax_modifier = -0.15
 			same_religion_advisor_cost = -0.2
 		}
+
 		country_as_secondary = {
-			tolerance_own = -1
-			adm_tech_cost_modifier = -0.05
-			stability_cost_modifier = -0.1
-			global_manpower_modifier = 0.15
+			global_unrest = -1
+			shock_damage_received = -0.025
+			global_manpower_modifier = 0.10
+			global_tax_modifier = -0.1
 		}
+
 		province = {
 			local_missionary_strength = -0.01
 			local_unrest = -1
@@ -1814,6 +1856,7 @@ christian = {
 				duration = 3650
 			}
 		}
+		#VU - End of Don's
 
 		personal_deity = yes
 		heretic = { OLD_BELIEVER MOLOKAN ICONOCLAST }
@@ -1867,19 +1910,28 @@ christian = {
 	mormon = {
 		color = { 223 148 255 }
 		icon = 38
+		#VU - Dons
 		allowed_conversion = {
 		}
+
 		country = {
-			missionary_maintenance_cost = -0.33
+			missionary_maintenance_cost = -0.5
 			dip_tech_cost_modifier = -0.1
-		}		
-		country_as_secondary = {
 			diplomatic_reputation = 1
-			advisor_pool = 1
+			improve_relation_modifier = 0.15
+		}	
+
+		country_as_secondary = {
+			missionary_maintenance_cost = -0.5
+			diplomatic_reputation = 1
+			improve_relation_modifier = 0.15
 		}
+
 		will_get_center = {
 			any_owned_province = { province_id = 236 } # the ID from the event
 		}
+		#VU - End of Dons
+
 		allowed_center_conversion = {
 			protestant 
 			catholic 
@@ -1904,37 +1956,45 @@ christian = {
 	lollardy = {
 		color = { 33 115 216 }
 		icon = 36
+
 		allowed_conversion = {
 			catholic
 			hussite
 			anglican
 			reformed
 		}
+
 		allowed_center_conversion = {
 			catholic
 			protestant 
 			reformed
 			anglican 
 		}
+
 		country = {
 			improve_relation_modifier = 0.2
 			development_cost = -0.1
 			tolerance_own = 1
-			land_forcelimit_modifier = 0.05
-			adm_tech_cost_modifier = -0.025
+			land_forcelimit_modifier = 0.1 #Don
+			adm_tech_cost_modifier = -0.05 #Don
 			legitimacy = 0.50
 			republican_tradition = 0.25
 			horde_unity = 0.25
 			devotion = 1
 		}
+
+		#Start of Don
 		country_as_secondary = {
-			land_forcelimit_modifier = 0.1
-			idea_cost = -0.05
-			tolerance_own = -1
-			global_missionary_strength = -0.005
-			development_cost = -0.1
+			improve_relation_modifier = 0.1
+			development_cost = -0.05
+			land_forcelimit_modifier = 0.05
+			adm_tech_cost_modifier = -0.025
 		}
-		province = { local_missionary_strength = -0.01 } #Was -0.005
+
+		province = { 
+			local_missionary_strength = -0.01 
+		} #Was -0.005
+		#End of Don
 		
 		on_convert = {
 			change_religion = lollardy
@@ -1985,241 +2045,244 @@ christian = {
 		heretic = { ANABAPTIST PENTECOSTAL PURITAN CONGREGATIONALIST }
 	}
 	
-	#Arian sect
-	arian = {
-		color = { 255 253 208 }
-		icon = 73
-		allowed_conversion = {
-			orthodox
-			miaphysite
-			nestorian
-		}
-		country = {
-			global_autonomy = -0.05
-			dip_tech_cost_modifier = -0.1 #Added _modifier
-			envoy_travel_time = -0.1
-			missionary_maintenance_cost = -0.33
-		}
-		country_as_secondary = {
-			global_autonomy = -0.05
-			tolerance_own = 1
-			war_exhaustion_cost = -0.05
-		}
-		province = {
-			local_missionary_strength = -0.01
-		}
+	#VU - @Oblivier Don hashed these out below
+	#Arian sect is from the 4th century stemming from the council of nicea, it was rooted out entirely by the end of 7th century
+	#arian = {
+	#	color = { 255 253 208 }
+	#	icon = 73
+	#	allowed_conversion = {
+	#		orthodox
+	#		miaphysite
+	#		nestorian
+	#	}
+	#	country = {
+	#		global_autonomy = -0.05
+	#		dip_tech_cost_modifier = -0.1 #Added _modifier
+	#		envoy_travel_time = -0.1
+	#		missionary_maintenance_cost = -0.33
+	#	}
+	#	country_as_secondary = {
+	#		global_autonomy = -0.05
+	#		tolerance_own = 1
+	#		war_exhaustion_cost = -0.05
+	#	}
+	#	province = {
+	#		local_missionary_strength = -0.01
+	#	}
+	#
+	#	flags_with_emblem_percentage = 20
+	#	flag_emblem_index_range = { 1 4 }
+	#	
+	#	heretic = { ZAMIKAELITES STEPHANITES EUSTATHIANS }
+	#	
+	#	misguided_heretic = yes
+	#	
+	#	holy_sites = { 341 224 2313 358 151 }
+	#	
+	#	blessings = {
+	#		arian_thought
+	#		alone_in_faith
+	#		independent_from_nicaea
+	#		constantinian_support
+	#		longevity
+	#	}
+	#}
 
-		flags_with_emblem_percentage = 20
-		flag_emblem_index_range = { 1 4 }
-		
-		heretic = { ZAMIKAELITES STEPHANITES EUSTATHIANS }
-		
-		misguided_heretic = yes
-		
-		holy_sites = { 341 224 2313 358 151 }
-		
-		blessings = {
-			arian_thought
-			alone_in_faith
-			independent_from_nicaea
-			constantinian_support
-			longevity
-		}
-	}
-
-	montanist = {
-		color = { 170 170 170 }
-		icon = 75
-		allowed_conversion = {			
-			catholic
-			hussite	
-			orthodox
-			#chalcedonian	
-		}
-		country = {
-			global_autonomy = -0.05
-			tolerance_heretic = 1 
-			war_exhaustion_cost = -0.10
-			envoy_travel_time = -0.1
-		}
-		country_as_secondary = {
-			global_autonomy = -0.05
-			tolerance_heretic = 1 
-			war_exhaustion_cost = -0.05
-		}
-		province = {
-			local_unrest = -1
-		}
-		fervor = yes
-		misguided_heretic = yes
-		on_convert = {
-			change_religion = montanist
-			add_prestige = -100
-			add_country_modifier = {
-				name = "conversion_zeal"
-				duration = 3650
-			}
-		}
-
-		heretic = { ANABAPTIST PENTECOSTAL PURITAN CONGREGATIONALIST }
-	}
+	#hashed out due to being a heresy from the 2nd century
+	#montanist = {
+	#	color = { 170 170 170 }
+	#	icon = 75
+	#	allowed_conversion = {			
+	#		catholic
+	#		hussite	
+	#		orthodox
+	#		#chalcedonian	
+	#	}
+	#	country = {
+	#		global_autonomy = -0.05
+	#		tolerance_heretic = 1 
+	#		war_exhaustion_cost = -0.10
+	#		envoy_travel_time = -0.1
+	#	}
+	#	country_as_secondary = {
+	#		global_autonomy = -0.05
+	#		tolerance_heretic = 1 
+	#		war_exhaustion_cost = -0.05
+	#	}
+	#	province = {
+	#		local_unrest = -1
+	#	}
+	#	fervor = yes
+	#	misguided_heretic = yes
+	#	on_convert = {
+	#		change_religion = montanist
+	#		add_prestige = -100
+	#		add_country_modifier = {
+	#			name = "conversion_zeal"
+	#			duration = 3650
+	#		}
+	#	}
+	#
+	#	heretic = { ANABAPTIST PENTECOSTAL PURITAN CONGREGATIONALIST }
+	#}
 	
-	#Monothelite religion
-	monothelite = {
-		color = { 255 23 134 }
-		icon = 44
-		allowed_conversion = {
-			miaphysite
-			orthodox
-			nestorian
-		}
-		country = {
-			global_autonomy = -0.05
-			tolerance_own = 2
-			war_exhaustion_cost = -0.10
-			envoy_travel_time = -0.1
-			improve_relation_modifier = 0.1
-		}
-		country_as_secondary = {
-			global_autonomy = -0.05
-			tolerance_own = 1
-			war_exhaustion_cost = -0.05
-		}
-		province = {
-			local_missionary_strength = -0.015
-		}
-
-		has_patriarchs = yes #Uses patriarchs mechanic
-		
-		orthodox_icons = {
-			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
-
-			icon_michael = {
-				discipline = 0.05
-				manpower_recovery_speed = 0.1
-				
-				allow = {
-					always = yes
-				}
-				visible = {	always = yes }
-				ai_will_do = {
-					factor = 1
-					modifier = {
-						factor = 0
-						is_at_war = no
-					}
-					modifier = {
-						factor = 3
-						is_in_important_war = yes
-					}
-				}
-			}
-
-			icon_eleusa = {
-				global_unrest = -3
-				harsh_treatment_cost = -0.25
-				
-				allow = {
-					always = yes
-				}
-				visible = {	always = yes }
-				ai_will_do = {
-					factor = 1
-					modifier = {
-						factor = 0
-						NOT = {
-							calc_true_if = {
-								all_owned_province = {
-									unrest = 1
-								}
-								amount = 2
-							}
-						}
-					}
-					modifier = {
-						factor = 3
-						calc_true_if = {
-							all_owned_province = {
-								unrest = 1
-							}
-							amount = 5
-						}
-					}
-				}
-			}
-
-			icon_pancreator = {
-				development_cost = -0.10
-				build_cost = -0.1
-				
-				allow = {
-					always = yes
-				}
-				visible = {	always = yes }
-				ai_will_do = {
-					factor = 0
-				}
-			}
-	
-			icon_nicholas = {
-				improve_relation_modifier = 0.25
-				ae_impact = -0.1
-				allow = {
-					always = yes
-				}
-				visible = {	always = yes }
-				ai_will_do = {
-					factor = 0.5
-				}
-			}
-
-			icon_climacus = {
-				global_institution_spread = 0.25
-				embracement_cost = -0.2
-				allow = {
-					always = yes
-				}
-				visible = {	always = yes }
-				ai_will_do = {
-					factor = 0.8
-					modifier = {
-						factor = 0
-						NOT = {
-							calc_true_if = {
-								all_owned_province = {
-									current_institution = 1
-									NOT = { current_institution = 95 }
-								}
-								amount = 1
-							}
-						}
-					}
-					modifier = {
-						factor = 3
-						calc_true_if = {
-							all_owned_province = {
-								current_institution = 1
-								NOT = { current_institution = 95 }
-							}
-							amount = 5
-						}
-					}
-				}
-			}
-		}
-
-		on_convert = {
-			change_religion = monothelite
-			add_prestige = -100
-			add_country_modifier = {
-				name = "conversion_zeal"
-				duration = 3650
-			}
-		}
-		
-		heretic = { OLD_BELIEVER MOLOKAN ICONOCLAST }
-		misguided_heretic = yes
-	}
+	#Monothelite was a temporary interpretation of the christian doctrine between 622 to  680
+	#monothelite = {
+	#	color = { 255 23 134 }
+	#	icon = 44
+	#	allowed_conversion = {
+	#		miaphysite
+	#		orthodox
+	#		nestorian
+	#	}
+	#	country = {
+	#		global_autonomy = -0.05
+	#		tolerance_own = 2
+	#		war_exhaustion_cost = -0.10
+	#		envoy_travel_time = -0.1
+	#		improve_relation_modifier = 0.1
+	#	}
+	#	country_as_secondary = {
+	#		global_autonomy = -0.05
+	#		tolerance_own = 1
+	#		war_exhaustion_cost = -0.05
+	#	}
+	#	province = {
+	#		local_missionary_strength = -0.015
+	#	}
+	#
+	#	has_patriarchs = yes #Uses patriarchs mechanic
+	#	
+	#	orthodox_icons = {
+	#		# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
+	#
+	#		icon_michael = {
+	#			discipline = 0.05
+	#			manpower_recovery_speed = 0.1
+	#			
+	#			allow = {
+	#				always = yes
+	#			}
+	#			visible = {	always = yes }
+	#			ai_will_do = {
+	#				factor = 1
+	#				modifier = {
+	#					factor = 0
+	#					is_at_war = no
+	#				}
+	#				modifier = {
+	#					factor = 3
+	#					is_in_important_war = yes
+	#				}
+	#			}
+	#		}
+	#
+	#		icon_eleusa = {
+	#			global_unrest = -3
+	#			harsh_treatment_cost = -0.25
+	#			
+	#			allow = {
+	#				always = yes
+	#			}
+	#			visible = {	always = yes }
+	#			ai_will_do = {
+	#				factor = 1
+	#				modifier = {
+	#					factor = 0
+	#					NOT = {
+	#						calc_true_if = {
+	#							all_owned_province = {
+	#								unrest = 1
+	#							}
+	#							amount = 2
+	#						}
+	#					}
+	#				}
+	#				modifier = {
+	#					factor = 3
+	#					calc_true_if = {
+	#						all_owned_province = {
+	#							unrest = 1
+	#						}
+	#						amount = 5
+	#					}
+	#				}
+	#			}
+	#		}
+	#
+	#		icon_pancreator = {
+	#			development_cost = -0.10
+	#			build_cost = -0.1
+	#			
+	#			allow = {
+	#				always = yes
+	#			}
+	#			visible = {	always = yes }
+	#			ai_will_do = {
+	#				factor = 0
+	#			}
+	#		}
+	#
+	#		icon_nicholas = {
+	#			improve_relation_modifier = 0.25
+	#			ae_impact = -0.1
+	#			allow = {
+	#				always = yes
+	#			}
+	#			visible = {	always = yes }
+	#			ai_will_do = {
+	#				factor = 0.5
+	#			}
+	#		}
+	#
+	#		icon_climacus = {
+	#			global_institution_spread = 0.25
+	#			embracement_cost = -0.2
+	#			allow = {
+	#				always = yes
+	#			}
+	#			visible = {	always = yes }
+	#			ai_will_do = {
+	#				factor = 0.8
+	#				modifier = {
+	#					factor = 0
+	#					NOT = {
+	#						calc_true_if = {
+	#							all_owned_province = {
+	#								current_institution = 1
+	#								NOT = { current_institution = 95 }
+	#							}
+	#							amount = 1
+	#						}
+	#					}
+	#				}
+	#				modifier = {
+	#					factor = 3
+	#					calc_true_if = {
+	#						all_owned_province = {
+	#							current_institution = 1
+	#							NOT = { current_institution = 95 }
+	#						}
+	#						amount = 5
+	#					}
+	#				}
+	#			}
+	#		}
+	#	}
+	#
+	#	on_convert = {
+	#		change_religion = monothelite
+	#		add_prestige = -100
+	#		add_country_modifier = {
+	#			name = "conversion_zeal"
+	#			duration = 3650
+	#		}
+	#	}
+	#	
+	#	heretic = { OLD_BELIEVER MOLOKAN ICONOCLAST }
+	#	misguided_heretic = yes
+	#}
+	#VU - Hashed out by Don
 	
 	harmonized_modifier = harmonized_christian
 	

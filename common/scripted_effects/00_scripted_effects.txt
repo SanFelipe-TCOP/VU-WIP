@@ -2071,13 +2071,14 @@ unlock_merc_company = {
 # When adding a new unlockable Church Aspect then make sure that a unlock_church_aspect_$church_aspect$_tt is defined in the localization
 # For checking if a Church Aspect is unlocked already, use has_unlocked_church_aspect = { church_aspect = $church_aspect$ }
 # For localization write the following: "Unlock the Protestant church aspect '§Y<Church Aspect>§!'."
-unlock_church_aspect = {
-	custom_tooltip = unlock_church_aspect_$church_aspect$_tt
-	hidden_effect = {
-		set_country_flag = unlocked_church_aspect_$church_aspect$
-	}
-}
-
+#VU - Don hashed this out
+#unlock_church_aspect = {
+#	custom_tooltip = unlock_church_aspect_$church_aspect$_tt
+#	hidden_effect = {
+#		set_country_flag = unlocked_church_aspect_$church_aspect$
+#	}
+#}
+#VU - End of Don hashed this out
 #Country effect
 ##########################################################
 # Supports following government reforms

@@ -1100,6 +1100,26 @@ ladislaus_postumus_heir_died_effect = {
 	}
 }
 
+#frederick_III_king_died_effect = {
+#	if = {
+#		limit = {
+#			tag = AUT
+#			has_country_flag = aut_frederick_III_king
+#			NOT = {
+#				has_country_flag = aut_keep_frederick_III_alive
+#			}
+#			STY = {
+#				has_ruler = "Frederick III"
+#				has_country_flag = sty_frederick_III_king
+#			}
+#		}
+#		STY = {
+#			kill_ruler = {}
+#			clr_country_flag = sty_frederick_III_king
+#		}
+#	}
+#}
+
 ladislaus_postumus_king_died_effect = {
 	if = {
 		limit = {

@@ -1044,7 +1044,6 @@ country_event = {
 #			limit = {
 #				has_dlc = "Rights of Man"
 #			}
-#			#Everything here about him is 100% correct. No wonder he sold his team down the river for Stiopa, Big Boss and PDX.
 #			add_ruler_personality = careful_personality 
 #			add_ruler_personality = craven_personality
 #			add_ruler_personality = babbling_buffoon_personality

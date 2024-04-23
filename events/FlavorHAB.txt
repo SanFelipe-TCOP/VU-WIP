@@ -2334,3 +2334,119 @@ country_event = {
 		}
 	}
 }
+
+#VU - 1.36.2.* Addition 'Death of Frederich III' by SF (Template found and chosen by Actually Prussia)
+country_event = {
+	id = flavor_hab.40                           #Was flavor_dan.4 - SF
+	title = "flavor_hab.40.name"                    #Was flavor_dan.4.t - SF
+	desc = flavor_hab.40.desc
+	picture = DEATH_OF_HEIR_eventPicture         #Death of Frederich
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+            AND = {
+                tag = AUT
+                NOT = { has_ruler_flag = friedrich_III_flag } 
+                STY = {
+                    exists = yes
+                    NOT = { has_ruler_flag = friedrich_III_flag } 
+                }
+            }
+            AND = {
+                tag = STY
+                has_ruler_flag = friedrich_III_flag
+                AUT = {
+                    exists = yes
+                    has_ruler_flag = friedrich_III_flag
+                    NOT = { has_heir_flag = ladislaus_postumus_flag }
+                }
+            }
+		}
+	}
+
+	immediate = { #Great!
+		hidden_effect = {
+			if = {
+                limit = {
+                    tag = AUT
+                    NOT = { has_ruler_flag = friedrich_III_flag } 
+                    STY = {
+                        exists = yes
+                        NOT = { has_ruler_flag = friedrich_III_flag } 
+                    }
+                }
+				AUT = {
+		        	inherit = BSN
+		        	inherit = CNL
+		        	inherit = CR1
+		        	inherit = FRG
+		        	inherit = SH1
+		        	inherit = STY
+		        	change_tag = HAB
+			    	define_ruler = {
+			        	name = "Ladislaus Postumus"
+	                	dynasty = "von Habsburg"
+	                	adm = 3
+	                	dip = 3
+	                	mil = 2
+			        	age = 30
+			        	claim = 100
+			        }
+					kill_heir = yes
+		        }
+            }
+            else_if = {
+                limit = {
+                    tag = STY
+                    has_ruler_flag = friedrich_III_flag
+                    AUT = {
+                        exists = yes
+                        has_ruler_flag = friedrich_III_flag
+                        NOT = { has_heir_flag = ladislaus_postumus_flag }
+                    }
+                }
+				STY = {
+					inherit = AUT
+		        	inherit = BSN
+		        	inherit = CNL
+		        	inherit = CR1
+		        	inherit = FRG
+		        	inherit = SH1
+		        	#change_tag = HAB
+			    	define_ruler = {
+			        	name = "Friedrich III"
+	                	dynasty = "von Habsburg"
+	                	adm = 2
+						dip = 5
+						mil = 1
+			        	#age = 30
+			        	claim = 100
+			        }
+		        }
+            }
+		}
+	}
+	
+	option = {
+		name = "flavor_hab.40.a"                 #Was flavor_dan.4.a - SF
+		ai_chance = {
+			factor = 75
+		}
+		custom_tooltip = flavor_hab.40.a.tt      #Was flavor_dan.4.a.tt - SF
+		if = {
+			limit = { dynasty = "von Habsburg" }
+			add_years_of_income = -0.75
+			add_stability = 1
+			add_manpower = 10
+		}
+		if = {
+			limit = { NOT = { dynasty = "von Habsburg" } }
+			add_years_of_income = -1
+			add_stability = 1
+			add_manpower = 10
+		}
+	}
+}

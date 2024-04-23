@@ -55,8 +55,6 @@ national_focus = ADM
 		birth_date = 1415.9.21
 		death_date = 1493.8.19
 	}
-}
-1440.2.22 = {
 	heir = {
 		name = "Ladislaus Postumus"
 		monarch_name = "Ladislaus Postumus"
@@ -68,6 +66,8 @@ national_focus = ADM
 		birth_date = 1440.2.22
 		death_date = 1457.11.23
 	}
+	set_ruler_flag = friedrich_III_flag
+	set_heir_flag = ladislaus_postumus_flag
 }
 
 #1450.1.1 = { decision = court_of_wards_and_liveries }
