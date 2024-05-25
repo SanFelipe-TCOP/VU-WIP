@@ -1965,6 +1965,8 @@ gbr_row_3 = {
 					}
 					add_liberty_desire = -25
 				}
+				#Calais
+				87 = { change_culture = english } #VU addition by SF
 			}
 			else_if = {
 				limit = {
@@ -1973,6 +1975,8 @@ gbr_row_3 = {
 				add_adm_power = 150
 				add_dip_power = 150
 				add_mil_power = 150
+				#Calais
+				87 = { change_culture = english } #VU addition by SF
 			}
 			else = {
 				add_stability_or_adm_power = yes
