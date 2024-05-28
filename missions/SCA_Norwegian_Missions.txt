@@ -139,7 +139,7 @@ nor_colonialism_mission_slot = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					province_id = 45
+					province_id = 45      #Lubeck
 					NOT = { is_strongest_trade_power = ROOT }
 					NOT = {
 						trade_share = {
@@ -149,7 +149,7 @@ nor_colonialism_mission_slot = {
 					}
 				}
 				AND = {
-					province_id = 1975
+					province_id = 1975    #North Sea
 					NOT = {
 						trade_share = {
 							country = ROOT
@@ -158,7 +158,7 @@ nor_colonialism_mission_slot = {
 					}
 				}
 				AND = {
-					province_id = 1926
+					province_id = 1      #Stockholm
 					NOT = { is_strongest_trade_power = ROOT }
 					NOT = {
 						trade_share = {
@@ -170,12 +170,14 @@ nor_colonialism_mission_slot = {
 			}
 		}
 		trigger = {
+			#North Sea
 			1975 = {
 				trade_share = {
 					country = ROOT
 					share = 75
 				}
 			}
+			#Lubeck
 			45 = {
 				OR = {
 					is_strongest_trade_power = ROOT
@@ -185,7 +187,8 @@ nor_colonialism_mission_slot = {
 					}
 				}
 			}
-			1926 = {
+			#Stockholm
+			1 = {
 				OR = {
 					is_strongest_trade_power = ROOT
 					trade_share = {
