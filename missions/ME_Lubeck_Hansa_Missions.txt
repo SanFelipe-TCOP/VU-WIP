@@ -46,7 +46,7 @@ HSA_missions_1 = {
 		required_missions = { HSA_burgtor HSA_in_defense }
 		position = 2
 		provinces_to_highlight = {
-			province_id = 45
+			province_id = 45 #Lubeck
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { fort_level = 4 }
@@ -55,6 +55,7 @@ HSA_missions_1 = {
 		}
 		trigger = {
 			fortification_expert = 1
+			#Lubeck
 			45 = {
 				owned_by = ROOT
 				fort_level = 4
@@ -63,6 +64,7 @@ HSA_missions_1 = {
 		}
 		effect = {
 			add_army_tradition_or_mil_power = { amount = 15 }
+			#Lubeck
 			45 = {
 				remove_province_modifier = HSA_burgtor
 				add_province_modifier = {
@@ -1092,13 +1094,15 @@ HNS_missions_2 = {
 		trigger = {
 			OR = {
 				AND = {
+					#Lubeck
 					45 = {
 						trade_share = {
 							country = ROOT
 							share = 25
 						}
 					}
-					1926 = {
+					#Stockholm
+					1 = {
 						trade_share = {
 							country = ROOT
 							share = 25

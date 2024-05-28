@@ -1338,18 +1338,18 @@ liv_lva_trade_mission_slot = {
 				area = curonia_area
 				area = livonia_area
 				area = estonia_ingria_area
-				province_id = 1926
+				province_id = 1 #Stockholm
 			}
 			OR = {
 				AND = {
-					NOT = { province_id = 1926 }
+					NOT = { province_id = 1 } #Stockholm
 					OR = {
 						NOT = { owned_by = ROOT }
 						NOT = { has_trade_building_trigger = yes }
 					}
 				}
 				AND = {
-					province_id = 1926
+					province_id = 1 #Stockholm
 					NOT = { has_merchant = ROOT }
 				}
 			}
@@ -1367,11 +1367,13 @@ liv_lva_trade_mission_slot = {
 				has_trade_building_trigger = yes
 				value = 5
 			}
-			1926 = {
+			#Stockholm
+			1 = {
 				has_merchant = ROOT
 			}
 		}
 		effect = {
+			#Lubeck
 			45 = {
 				add_trade_modifier = {
 					who = ROOT
@@ -1380,7 +1382,8 @@ liv_lva_trade_mission_slot = {
 					key = liv_lva_construct_markets_tt
 				}
 			}
-			1926 = {
+			#Stockholm
+			1 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = 18250
@@ -1388,7 +1391,8 @@ liv_lva_trade_mission_slot = {
 					key = liv_lva_construct_markets_tt
 				}
 			}
-			1926 = {
+			#Stockholm
+			1 = {
 				add_trade_node_income = 50
 			}
 		}
@@ -4072,7 +4076,8 @@ liv_dummy_mission_slot_3 = {
 						has_trade_building_trigger = yes
 						value = 5
 					}
-					1926 = {
+					#Stockholm
+					1 = {
 						has_merchant = ROOT
 					}
 				}
@@ -4095,6 +4100,7 @@ liv_dummy_mission_slot_3 = {
 		}
 		effect = {
 			custom_tooltip = liv_livonian_path_effects_tt
+			#Lubeck
 			45 = {
 				add_trade_modifier = {
 					who = ROOT
@@ -4103,7 +4109,8 @@ liv_dummy_mission_slot_3 = {
 					key = liv_lva_construct_markets_tt
 				}
 			}
-			1926 = {
+			#Stockholm
+			1 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = 18250
@@ -4111,7 +4118,8 @@ liv_dummy_mission_slot_3 = {
 					key = liv_lva_construct_markets_tt
 				}
 			}
-			1926 = {
+			#Stockholm
+			1 = {
 				add_trade_node_income = 50
 			}
 			custom_tooltip = teu_crsuader_path_effects_tt

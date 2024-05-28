@@ -264,13 +264,15 @@ country_event = {
 	major_trigger = {
 		NOT = { has_global_flag = TEU_denied }
 		OR = {
+			#Lubeck
 			45 = {
 				trade_share = {
 					country = ROOT
 					share = 1
 				}
 			}
-			1926 = {
+			#Stockholm
+			1 = {
 				trade_share = {
 					country = ROOT
 					share = 1

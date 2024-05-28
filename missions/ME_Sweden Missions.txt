@@ -404,7 +404,8 @@ SWE_missions_2 = {
 			}
 		}
 		trigger = {
-			1926 = {
+			#Stockholm
+			1 = {
 				trade_share = {
 					country = ROOT
 					share = 80
@@ -526,7 +527,7 @@ SWE_missions_3 = {
 		required_missions = { sweden_echoes_of_freedom }
 		position = 2
 		provinces_to_highlight = {
-			province_id = 1
+			province_id = 1  #Stockholm
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
