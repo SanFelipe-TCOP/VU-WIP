@@ -837,7 +837,7 @@ got_republic_slot_1 = {
 		}
 		effect = {
 			add_mercantilism = 5
-			1926 = {
+			1 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = 9125
@@ -863,7 +863,7 @@ got_republic_slot_1 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					province_id = 1926
+					province_id = 1
 					NOT = {
 						trade_share = {
 							country = ROOT
@@ -882,7 +882,7 @@ got_republic_slot_1 = {
 			}
 		}
 		trigger = {
-			1926 = {
+			1 = {
 				trade_share = {
 					country = ROOT
 					share = 20
@@ -1161,7 +1161,7 @@ got_republic_slot_2 = {
 			got_republic_russian_kontor
 		}
 		provinces_to_highlight = {
-			province_id = 1926
+			province_id = 1
 			NOT = {
 				trade_share = {
 					country = root
@@ -1184,7 +1184,7 @@ got_republic_slot_2 = {
 			else = {
 				total_development = 200
 			}
-			1926 = {
+			1 = {
 				trade_share = {
 					country = root
 					share = 70
@@ -2113,7 +2113,7 @@ got_pirate_slot_4 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					province_id = 1926
+					province_id = 1
 					NOT = {
 						privateer_power = {
 							country = ROOT
@@ -2135,7 +2135,7 @@ got_pirate_slot_4 = {
 			}
 		}
 		trigger = {
-			1926 = {
+			1 = {
 				privateer_power = {
 					country = ROOT
 					share = 15

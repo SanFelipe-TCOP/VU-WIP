@@ -198,7 +198,7 @@ fin_missions_1 = {
 						limit = { 
 							NOT = { owned_by = ROOT }
 							NOT = { is_core = ROOT } 
-							NOT = { province_id = 1926 }
+							NOT = { province_id = 1 }
 						}
 						add_permanent_claim = ROOT 
 					}
@@ -374,7 +374,7 @@ fin_missions_2 = {
 		position = 4
 		provinces_to_highlight = {
 			any_trade_node_member_province = {
-				province_id = 1926
+				province_id = 1
 			} 
 			is_sea = no 
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -382,7 +382,7 @@ fin_missions_2 = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = own_all_baltic_provinces_tt
-				1926 = { 
+				1 = { 
 					NOT = {
 						any_trade_node_member_province = {
 							is_sea = no 
