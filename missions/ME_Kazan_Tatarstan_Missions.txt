@@ -2952,43 +2952,50 @@ TRN_missions_2 = {
 			}
 		}
 		trigger = {
-			284 = {#crimea
+			#Crimea
+			284 = {
 				trade_share = {
 					country = ROOT
 					share = 50
 				}
 			}
-			280 = {#kiev
+			#Kiev
+			280 = {
 				trade_share = {
 					country = ROOT
 					share = 50
 				}
 			}
-			310 = {#novgorod
+			#Novgorod
+			310 = {
 				trade_share = {
 					country = ROOT
 					share = 50
 				}
 			}
-			1926 = {#baltic
+			#Stockholm
+			1 = {
 				trade_share = {
 					country = ROOT
 					share = 50
 				}
 			}
-			1652 = {#white sea
+			#White Sea
+			1652 = {
 				trade_share = {
 					country = ROOT
 					share = 50
 				}
 			}
-			1082 = { #kazan
+			#Kazan
+			1082 = {
 				trade_share = {
 					country = ROOT
 					share = 50
 				}
 			}
-			262 = {#krakow
+			#Krakow
+			262 = {
 				trade_share = {
 					country = ROOT
 					share = 50

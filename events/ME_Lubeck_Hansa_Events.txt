@@ -338,18 +338,21 @@ country_event = { #The Sound
 	major = yes
 	major_trigger = {
 		OR = {
-			1926 = { 
+			#Stockholm
+			1 = { 
 				trade_share = {
 					country = ROOT
 					share = 1
 				}
 			}
+			#Lubeck
 			45 = { 
 				trade_share = {
 					country = ROOT
 					share = 1
 				}
 			}
+			#English Channel
 			1269 = { 
 				trade_share = {
 					country = ROOT
@@ -393,18 +396,21 @@ country_event = { #Hanseatic Fish Route
 	major = yes
 	major_trigger = {
 		OR = {
-			1926 = { 
+			#Stockholm
+			1 = { 
 				trade_share = {
 					country = ROOT
 					share = 1
 				}
 			}
+			#Lubeck
 			45 = { 
 				trade_share = {
 					country = ROOT
 					share = 1
 				}
 			}
+			#English Channel
 			1269 = { 
 				trade_share = {
 					country = ROOT
@@ -678,18 +684,21 @@ country_event = { # [Root.GetName] secedes from the League
 	major = yes
 	major_trigger = {
 		OR = {
-			1926 = { 
+			#Stockholm
+			1 = { 
 				trade_share = {
 					country = ROOT
 					share = 1
 				}
 			}
+			#Lubeck
 			45 = { 
 				trade_share = {
 					country = ROOT
 					share = 1
 				}
 			}
+			#English Channel
 			1269 = { 
 				trade_share = {
 					country = ROOT

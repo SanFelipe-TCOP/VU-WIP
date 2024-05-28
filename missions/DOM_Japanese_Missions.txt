@@ -287,8 +287,8 @@ DOM_japanse_missions_1 = {
 						limit = { 
 							NOT = { owned_by = ROOT }
 							NOT = { is_core = ROOT } 
-							NOT = { province_id = 1926 }
-							NOT = { province_id = 1361 }
+							NOT = { province_id = 1 } #Stockholm
+							NOT = { province_id = 1361 } #Straits of Johor
 						}
 						add_permanent_claim = ROOT 
 					}

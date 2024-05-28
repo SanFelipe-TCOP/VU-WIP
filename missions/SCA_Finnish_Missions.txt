@@ -198,7 +198,7 @@ fin_missions_1 = {
 						limit = { 
 							NOT = { owned_by = ROOT }
 							NOT = { is_core = ROOT } 
-							NOT = { province_id = 1 }
+							NOT = { province_id = 1 }  #Stockholm
 						}
 						add_permanent_claim = ROOT 
 					}
@@ -212,7 +212,7 @@ fin_missions_1 = {
 		required_missions = { fin_independence }
 		position = 3
 		provinces_to_highlight = { 
-			province_id = 1 
+			province_id = 1  #Stockholm
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = { 
@@ -374,7 +374,7 @@ fin_missions_2 = {
 		position = 4
 		provinces_to_highlight = {
 			any_trade_node_member_province = {
-				province_id = 1
+				province_id = 1  #Stockholm
 			} 
 			is_sea = no 
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -382,7 +382,7 @@ fin_missions_2 = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = own_all_baltic_provinces_tt
-				1 = { 
+				1926 = { 
 					NOT = {
 						any_trade_node_member_province = {
 							is_sea = no 
@@ -873,7 +873,7 @@ fin_missions_5 = {
 				change_province_name = "Turku"
 				add_base_tax = 2 
 				add_base_production = 1
-				add_base_manpower  = 1
+				add_base_manpower = 1
 				if = { 
 					limit = { has_dlc = "Mandate of Heaven" }
 					add_prosperity = 100
@@ -965,7 +965,7 @@ vu_fin_missions_2_uralia = {
 					}
 					add_base_tax = 1
 					add_base_production = 1
-					add_base_manpower  = 1
+					add_base_manpower = 1
 					add_province_modifier = { 
     						name = military_reinforcement
     						duration = 7300
