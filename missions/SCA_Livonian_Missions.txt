@@ -1349,7 +1349,7 @@ liv_lva_trade_mission_slot = {
 					}
 				}
 				AND = {
-					province_id = 1926
+					province_id = 1 #Stockholm
 					NOT = { has_merchant = ROOT }
 				}
 			}
@@ -1367,7 +1367,7 @@ liv_lva_trade_mission_slot = {
 				has_trade_building_trigger = yes
 				value = 5
 			}
-			1926 = {
+			1 = { #Stockholm
 				has_merchant = ROOT
 			}
 		}
@@ -1381,7 +1381,7 @@ liv_lva_trade_mission_slot = {
 					key = liv_lva_construct_markets_tt
 				}
 			}
-			1926 = {
+			1 = { #Stockholm
 				add_trade_modifier = {
 					who = ROOT
 					duration = 18250
@@ -1389,7 +1389,7 @@ liv_lva_trade_mission_slot = {
 					key = liv_lva_construct_markets_tt
 				}
 			}
-			1926 = {
+			1 = { #Stockholm
 				add_trade_node_income = 50
 			}
 		}
@@ -4073,7 +4073,7 @@ liv_dummy_mission_slot_3 = {
 						has_trade_building_trigger = yes
 						value = 5
 					}
-					1926 = {
+					1 = { #Stockholm
 						has_merchant = ROOT
 					}
 				}
@@ -4114,7 +4114,7 @@ liv_dummy_mission_slot_3 = {
 					key = liv_lva_construct_markets_tt
 				}
 			}
-			1926 = {
+			1 = { #Stockholm
 				add_trade_node_income = 50
 			}
 			custom_tooltip = teu_crsuader_path_effects_tt

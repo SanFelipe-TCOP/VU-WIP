@@ -865,7 +865,7 @@ got_republic_slot_1 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					province_id = 1926
+					province_id = 1 #Stockholm
 					NOT = {
 						trade_share = {
 							country = ROOT
@@ -884,7 +884,7 @@ got_republic_slot_1 = {
 			}
 		}
 		trigger = {
-			1926 = {
+			1 = { #Stockholm
 				trade_share = {
 					country = ROOT
 					share = 20
@@ -1186,7 +1186,7 @@ got_republic_slot_2 = {
 			else = {
 				total_development = 200
 			}
-			1926 = {
+			1 = { #Stockholm
 				trade_share = {
 					country = root
 					share = 70
@@ -2115,7 +2115,7 @@ got_pirate_slot_4 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					province_id = 1926
+					province_id = 1 #Stockholm
 					NOT = {
 						privateer_power = {
 							country = ROOT

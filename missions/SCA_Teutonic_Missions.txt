@@ -4441,7 +4441,7 @@ teu_pru_development_mission_slot = {
 		}
 		effect = {
 			add_mercantilism = 10
-			1926 = {
+			1 = { #Stockholm
 				add_trade_node_income = 50
 			}
 		}
@@ -7553,7 +7553,7 @@ teu_dummy_mission_slot_5 = {
 						tooltip = teu_prussian_path_tt
 						always = no
 					}
-					1926 = {
+					1 = { #Stockholm
 						trade_share = {
 							country = ROOT
 							share = 75
@@ -7577,7 +7577,7 @@ teu_dummy_mission_slot_5 = {
 		effect = {
 			custom_tooltip = teu_prussian_path_effects_tt
 			add_mercantilism = 10
-			1926 = {
+			1 = { #Stockholm
 				add_trade_node_income = 50
 			}
 			custom_tooltip = teu_crsuader_path_effects_tt
