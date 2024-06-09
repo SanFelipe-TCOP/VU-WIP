@@ -2705,6 +2705,34 @@ on_monarch_death = {
 			kill_heir = {} #If Albrecht Achilles dies in Ansbach he will also be dead in Brandenburg, will appear as normal death of heir to BRA.
 		}
 	}
+	if = { 
+		limit = {
+			tag = AUT
+			STY = {
+				has_ruler_flag = friedrich_III_flag
+			}
+		}
+		STY = { 
+			kill_ruler = yes
+		}
+		country_event = { 
+            id = flavor_hab.40 #Death of Frederick III
+        }
+	}
+	if = { 
+		limit = {
+			tag = STY
+			AUT = {
+				has_ruler_flag = friedrich_III_flag
+			}
+		}
+		AUT = { 
+			kill_ruler = yes
+			country_event = { 
+                id = flavor_hab.40 #Death of Frederick III
+            }
+		}
+	}
 	if = {
 		limit = { has_country_modifier = sought_after_bachelor }
 		remove_country_modifier = sought_after_bachelor
@@ -2865,7 +2893,10 @@ on_monarch_death = {
 	
 	if = {
 		limit = {
-			tag = HAB
+			OR = {
+				tag = HAB
+				tag = AUT #VU - SF addition
+			}
 		}
 		country_event = { id = me_austria_nobles.1 }
 	}
@@ -3323,6 +3354,18 @@ on_diplomatic_annex = {
 
 # country
 on_heir_death = {
+	if = {
+		limit = {
+			tag = AUT
+			has_ruler_flag = friedrich_III_flag
+			NOT = { has_heir_flag = ladislaus_postumus_flag }
+		}
+		STY = {
+			country_event = { 
+                id = flavor_hab.40 #Death of Frederick III
+            }
+		}
+	}
 	on_heir_disinherited_or_death_effect = yes
 	if = {
 		limit = { has_country_flag = heir_dip_education }

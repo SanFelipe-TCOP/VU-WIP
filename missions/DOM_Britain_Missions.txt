@@ -617,9 +617,10 @@ eng_row_slot_1 = {
 				}
 				add_church_power = 100
 				tooltip = {
-					unlock_church_aspect = {
-						church_aspect = anglican_aspect
-					}	
+					#Hashed out by Don
+					#unlock_church_aspect = {
+					#	church_aspect = anglican_aspect
+					#}	
 				}
 			}
 			else_if = {
@@ -628,11 +629,12 @@ eng_row_slot_1 = {
 					religion = anglican
 				}
 				add_church_power = 100
-				tooltip = {
-					unlock_church_aspect = {
-						church_aspect = spread_the_book_of_common_prayer
-					}	
-				}
+				#Hashed out by Don
+				#tooltip = {
+				#	unlock_church_aspect = {
+				#		church_aspect = spread_the_book_of_common_prayer
+				#	}	
+				#}
 			}
 			else = {
 				add_country_modifier = {
@@ -641,12 +643,13 @@ eng_row_slot_1 = {
 				}
 			}
 			hidden_effect = {
-				unlock_church_aspect = {
-					church_aspect = anglican_aspect
-				}	
-				unlock_church_aspect = {
-					church_aspect = spread_the_book_of_common_prayer
-				}	
+				#Hashed out by Don
+				#unlock_church_aspect = {
+				#	church_aspect = anglican_aspect
+				#}	
+				#unlock_church_aspect = {
+				#	church_aspect = spread_the_book_of_common_prayer
+				#}	
 			}
 			change_government_reform_progress = 50
 			simple_dynamic_effect = {
@@ -1962,6 +1965,8 @@ gbr_row_3 = {
 					}
 					add_liberty_desire = -25
 				}
+				#Calais
+				87 = { change_culture = english } #VU addition by SF
 			}
 			else_if = {
 				limit = {
@@ -1970,6 +1975,8 @@ gbr_row_3 = {
 				add_adm_power = 150
 				add_dip_power = 150
 				add_mil_power = 150
+				#Calais
+				87 = { change_culture = english } #VU addition by SF
 			}
 			else = {
 				add_stability_or_adm_power = yes

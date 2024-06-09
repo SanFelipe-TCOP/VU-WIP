@@ -793,7 +793,6 @@ tur_conquest_of_europe = {
 	}
 
 	tur_address_firman = {
-		#Credit to Small Boss for ruining the game
 		icon = mission_the_firman
 		required_missions = {  }
 		position = 10
@@ -3264,7 +3263,7 @@ tur_arabian_conquest = {
 		}
 	}
 
-	tur_crimean_khaganate = {	# written by Small "furry" Boss
+	tur_crimean_khaganate = {
 		icon = mission_chinese_general_riding
 		required_missions = {  }
 		position = 6
@@ -3542,7 +3541,6 @@ tur_arabian_conquest = {
 	}
 
 	tur_seize_the_caliphate = {
-		#Localization written by Small "dick" Boss
 		icon = mission_the_caliph
 		required_missions = {
 			tur_conquer_egypt
@@ -4804,7 +4802,6 @@ tur_persian_conquest = {
 	}
 
 	tur_imperial_fabrics = {
-		#Credit to Small "Scroat" Boss
 		icon = mission_finest_carpets
 		required_missions = { tur_the_silk_road }
 		position = 11

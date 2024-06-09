@@ -112,6 +112,7 @@ country_event = {
 					is_subject_of = POR
 					is_subject_of = IBE
 					is_subject_of = HAB
+					is_subject_of = AUT				#Addition by Altan
 					tag = CAS
 					tag = SPA
 					tag = BSP
@@ -121,6 +122,7 @@ country_event = {
 					tag = POR
 					tag = IBE
 					tag = HAB
+					tag = AUT				#Addition by Altan
 				}
 			}
 			1744 = { change_trade_goods = sugar }	#Antwerp becomes the sugar capital of Europe, refining and shipping most of the sugar from Portugal and Spain.

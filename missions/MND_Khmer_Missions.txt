@@ -299,7 +299,7 @@ mnd_khmer_3 = {
 				region = indo_china_region
 				region = south_china_sea_islands_region
 			}
-			trade_goods = grain
+			trade_goods = rice
 			OR = {
 				NOT = { has_building = farm_estate }
 				NOT = { owned_by = ROOT }

@@ -198,7 +198,7 @@ vu_dithmarschen_missions_1 = {
 		position = 6
 		provinces_to_highlight = { 
 			province_id = 1269 
-			province_id = 1926
+			province_id = 1 #Stockholm
 		}
 		trigger = {
 			OR = {

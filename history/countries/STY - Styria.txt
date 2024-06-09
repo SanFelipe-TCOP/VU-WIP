@@ -38,6 +38,7 @@ capital = 1863	# Graz
 		dip = 5
 		mil = 1
 	}
+	set_ruler_flag = friedrich_III_flag
 }
 
 

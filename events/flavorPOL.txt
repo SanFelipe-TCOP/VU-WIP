@@ -2083,7 +2083,7 @@ country_event = {
 	}
 }
 
-####Lions of the North#### scripted by Small Boss
+####Lions of the North#### scripted by Big Boss
 
 country_event = { #The Little Kings Uprising
 	id = flavor_pol.23

@@ -42,13 +42,6 @@ march = {
 
 march = {
 	first = ENG
-	second = KOI
-	start_date = 1444.1.1
-	end_date = 1444.11.16 #VictorumUniversalis batch edit shortcut second performance start begins
-}
-
-march = {
-	first = ENG
 	second = JER
 	start_date = 1444.1.1
 	end_date = 1444.11.16 #VictorumUniversalis batch edit shortcut second performance start begins
@@ -455,13 +448,6 @@ alliance = {
 
 march = {
 	first = GBR
-	second = KOI
-	start_date = 1707.5.12
-	end_date = 1765.5.10			#Isle of Man Purchase Act 1765
-}
-
-march = {
-	first = GBR
 	second = JER
 	start_date = 1707.5.12
 	end_date = 1837.1.1
@@ -471,6 +457,7 @@ march = {
 # Dependencies #
 ################
 
+#Peerages
 #English Duchy of Buckingham
 dependency = {
 	subject_type = "english_peerage"
@@ -541,6 +528,24 @@ dependency = {
 	second = NOL
 	start_date = 1414.5.11
 	end_date = 2024.2.28
+}
+
+#English Duchy of Mann
+dependency = {                        #VU - Changed from a march to English Peerage on advice of Prussia. By SF
+	subject_type = "english_peerage"
+	first = ENG
+	second = KOI
+	start_date = 1444.1.1
+	end_date = 1444.11.16             #VictorumUniversalis batch edit shortcut second performance start begins
+}
+
+#British Duchy of Mann
+dependency = {                        #VU - Changed from a march to English Peerage on advice of Prussia. By SF
+	subject_type = "english_peerage"
+	first = GBR
+	second = KOI
+	start_date = 1707.5.12
+	end_date = 1765.5.10			  #Isle of Man Purchase Act 1765
 }
 
 #English Earldom of Warwick

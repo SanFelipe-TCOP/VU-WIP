@@ -22,18 +22,18 @@ tr_novgorod_1 = {
 		required_missions = {  }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 314
-				province_id = 4262
-				province_id = 1755
+				province_id = 314 #Vologda
+				province_id = 4262 #Totma
+				province_id = 1755 #Ustyug
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			owns = 314
-			owns = 4262
-			owns = 1755
+			owns = 314 #Vologda
+			owns = 4262 #Totma
+			owns = 1755 #Ustyug
 		}
 		effect = {
 			#Tver claims
@@ -219,7 +219,7 @@ tr_novgorod_2 = {
 			region = russia_region
 			OR = {
 				owner = { tag = TVE }
-				province_id = 294
+				province_id = 294 #Tver
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -233,6 +233,7 @@ tr_novgorod_2 = {
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
+			#Tver
 			294 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -338,9 +339,10 @@ tr_novgorod_3 = {
 		icon = mission_develop_nevas_port
 		required_missions = {  }
 		provinces_to_highlight = {
-			province_id = 33
+			province_id = 33 #Neva
 		}
 		trigger = {
+			#Neva
 			33 = {
 				owned_by = ROOT
 				has_building = marketplace
@@ -350,12 +352,14 @@ tr_novgorod_3 = {
 			navy_size_percentage = 1
 		}
 		effect = {
+			#Neva
 			33 = {
 				add_province_modifier = {
 					name = "neva_fleet"
 					duration = -1
 				}
 			}
+			#Riga
 			38 = {
 				if = {
 					limit = {
@@ -379,12 +383,14 @@ tr_novgorod_3 = {
 			}
 		}
 		trigger = {
+			#Riga
 			38 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
 			add_mercantilism = 2
+			#Memel
 			40 = {
 				if = {
 					limit = {
@@ -396,6 +402,7 @@ tr_novgorod_3 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			#Danzig
 			43 = {
 				if = {
 					limit = {
@@ -414,30 +421,34 @@ tr_novgorod_3 = {
 		required_missions = { nov_conquer_riga  }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 40
-				province_id = 43
-				province_id = 1926
+				province_id = 40 #Memel
+				province_id = 43 #Danzig
+				province_id = 1 #Stockholm
 			}
 			OR = {
-				province_id = 1926
+				province_id = 1 #Stockholm
 				NOT = {
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
 		}
 		trigger = {
+			#Memel
 			40 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			#Danzig
 			43 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			43 = { #Baltic Sea split.
+			#Danzig
+			43 = {
 				is_strongest_trade_power = ROOT
 			}
 		}
 		effect = {
 			add_mercantilism = 2
+			#Lubeck
 			45 = {
 				if = {
 					limit = {
@@ -449,6 +460,7 @@ tr_novgorod_3 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			#Hamburg
 			44 = {
 				if = {
 					limit = {
@@ -460,6 +472,7 @@ tr_novgorod_3 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			#Bremen
 			1874 = {
 				if = {
 					limit = {
@@ -478,30 +491,34 @@ tr_novgorod_3 = {
 		required_missions = { nov_conquer_danzig  }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 45
-				province_id = 44
-				province_id = 1874
+				province_id = 45 #Lubeck
+				province_id = 44 #Hamburg
+				province_id = 1874 #Bremen
 			}
 			OR = {
 				NOT = {
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 				AND = {
-					province_id = 45
+					province_id = 45 #Lubeck
 					NOT = { is_strongest_trade_power = ROOT }
 				}
 			}
 		}
 		trigger = {
+			#Lubeck
 			45 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			#Hamburg
 			44 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			#Bremen
 			1874 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			#Lubeck
 			45 = {
 				is_strongest_trade_power = ROOT
 			}
@@ -519,16 +536,18 @@ tr_novgorod_3 = {
 		required_missions = { nov_conquer_lubeck nov_scandinavian_ports  }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 310
-				province_id = 1652
+				province_id = 310 #Novgorod
+				province_id = 1652 #White Sea
 			}
 		}
 		trigger = {
 			OR = {
+				#Novgorod
 				310 = {
 					highest_value_trade_node = yes
 					is_strongest_trade_power = ROOT
 				}
+				#White Sea
 				1652 = {
 					highest_value_trade_node = yes
 					is_strongest_trade_power = ROOT
@@ -537,6 +556,7 @@ tr_novgorod_3 = {
 		}
 		effect = {
 			add_mercantilism = 5
+			#Novgorod
 			310 = {
 				add_province_modifier = {
 					name = "nov_the_great"
@@ -569,10 +589,10 @@ tr_novgorod_4 = {
 		icon = mission_found_arkhangelsk
 		required_missions = {  }
 		provinces_to_highlight = {
-			province_id = 313
+			province_id = 313 #Arkangelsk
 		}
 		trigger = {
-			owns = 313
+			owns = 313 #Arkangelsk
 			313 = {
 				OR = {
 					has_building = marketplace
@@ -581,12 +601,14 @@ tr_novgorod_4 = {
 			}
 		}
 		effect = {
+			#Kholmogory
 		    1955 = {
 				add_base_tax = -1
 				add_base_production = -1
 				add_base_manpower = -1
 				add_center_of_trade_level = -1
 			}
+			#Arkangelsk
 			313 = {
 				center_of_trade = 2
 				add_base_tax = 5
@@ -666,16 +688,17 @@ tr_novgorod_4 = {
 				area = pomor_area
 				area = arkhangelsk_area
 				area = karelia_area
-				province_id = 1652
+				province_id = 1652 #White Sea
 			}
 			OR = {
-				province_id = 1652
+				province_id = 1652 #White Sea
 				NOT = {
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
 		}
 		trigger = {
+			#White Sea
 			1652 = {
 				is_strongest_trade_power = ROOT
 			}
@@ -746,7 +769,7 @@ tr_novgorod_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			western_norway	 = {
+			western_norway = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -787,6 +810,7 @@ tr_novgorod_4 = {
 				name = "nov_grand_duchy_finland"
 				duration = -1
 			}
+			#Stockholm
 			1 = {
 				if = {
 					limit = {
@@ -798,6 +822,7 @@ tr_novgorod_4 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			#Gotland
 			25 = {
 				if = {
 					limit = {
@@ -809,6 +834,7 @@ tr_novgorod_4 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			#Lund
 			6 = {
 				if = {
 					limit = {
@@ -820,6 +846,7 @@ tr_novgorod_4 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			#Copenhagen
 			12 = {
 				if = {
 					limit = {
@@ -838,32 +865,37 @@ tr_novgorod_4 = {
 		required_missions = { nov_conquer_finland  }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1
-				province_id = 25
-				province_id = 6
-				province_id = 12
+				province_id = 1 #Stockholm
+				province_id = 25 #Gotland
+				province_id = 6 #Lund
+				province_id = 12 #Copenhagen
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
+			#Stockholm
 			1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			#Gotland
 			25 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			#Lund
 			6 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			#Copenhagen
 			12 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
 			add_mercantilism = 2
-			1926 = {
+			#Stockholm
+			1 = {
 				add_trade_modifier = {
 					who = root
 					duration = 7300
@@ -897,10 +929,11 @@ tr_novgorod_5 = {
 		icon = mission_autocephalous_archbishopric
 		required_missions = {  }
 		provinces_to_highlight = {
-			province_id = 310
+			province_id = 310 #Novgorod
 		}
 		trigger = {
 			stability = 2
+			#Novgorod
 			310 = {
 				owned_by = ROOT
 				has_state_patriach = yes
@@ -957,12 +990,13 @@ tr_novgorod_5 = {
 					}
 				}
 				AND = {
-					province_id = 1975
+					province_id = 1975 #North Sea
 					NOT = { is_strongest_trade_power = ROOT }				  
 				}
 			}
 		}
 		trigger = {
+			#North Sea
 			1975 = {
 				is_strongest_trade_power = ROOT
 			}

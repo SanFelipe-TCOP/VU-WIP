@@ -117,6 +117,7 @@ LombardyVenetia_missions_1 = {
 					hre_size = 1
 					emperor = {
 						NOT = { tag = HAB }
+						NOT = { tag = AUT }				#Addition by Altan
 					}
 				}
 				OR = {
@@ -338,6 +339,7 @@ LombardyVenetia_missions_2 = {
 					hre_size = 1
 					emperor = {
 						NOT = { tag = HAB }
+						NOT = { tag = AUT }
 					}
 				}
 				add_casus_belli = {

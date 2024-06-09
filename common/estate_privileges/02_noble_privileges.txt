@@ -1113,6 +1113,7 @@ estate_nobles_strong_duchies = {
 				is_subject_of_type = agricultural_march 
 				is_subject_of_type = medieval_vassal 
 				#is_subject_of_type = silesian_duke
+				is_subject_of_type = mandala_trade_vassal
 			}
 		}
 		NOT = { has_estate_privilege = estate_nobles_french_strong_duchies }
@@ -1153,6 +1154,7 @@ estate_nobles_strong_duchies = {
 						is_subject_of_type = agricultural_march 
 						is_subject_of_type = medieval_vassal 
 						#is_subject_of_type = silesian_duke
+						is_subject_of_type = mandala_trade_vassal
 					}
 				}
 			}

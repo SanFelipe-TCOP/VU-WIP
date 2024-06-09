@@ -397,6 +397,12 @@
  flavor_hab.24.name:0 "The Diet of the Hungarian and Croatian Nobility"
  flavor_hab.24.desc:1 "The Croatian and Hungarian nobility have come together in an impromptu diet, during which it was agreed upon that the two kingdoms, having been governed together under a personal union for decades, should henceforth be considered as one so that they can present a united front towards their [From.GetAdjective] overlords. We have therefore annexed the kingdom of Croatia."
  flavor_hab.24.A:0 "Excellent."
+
+ flavor_hab.40.name:0 "The Austrian Succession"
+ flavor_hab.40.desc:0 "The Austro bros are a funny bunch of delayed inbreds that have a rather hilarious way of setting their rulers on the throne, lacking the cranial capacity due to incest-wincest in comprehending basic succession laws, therefore annoying everyone of their neighbours and resulting in Czechs throwing them out of windows."
+ flavor_hab.40.a:0 "Hip hip hooray!"
+ flavor_hab.40.a.tt:0 "The Austrian Succession Outcome."
+
  #Neapolitan Republic
  new_flavour_nap.1.name:0 "Senatus Populusque Neapolitanus"
  new_flavour_nap.1.desc:0 "The populace has been left unsatisfied by the outcome of Masaniello's Revolt. They have now risen up anew, this time demanding freedom under a republican government. Having seized control of the city, their leader, Gennaro Annese, an armorer of much cunning and bravery who was the brains behind Masaniello, has declared the "Most Serene Republic of this Kingdom of Naples", which is to be governed by the S.P.Q.N., the Senate and People of Naples.\n\nThe nobility are split between loyalty to the [Root.Monarch.GetTitle] and support for the fledgling republic. Whichever way we respond, turmoil surely awaits!"

@@ -1650,6 +1650,7 @@ estate_burghers_khmer_irrigation = {
 			tag = LNA
 			tag = KHM
 			tag = SUN
+			tag = KME
 			has_estate_privilege = estate_vaisyas_khmer_irrigation
 		}
 	}

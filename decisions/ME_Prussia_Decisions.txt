@@ -465,7 +465,10 @@ country_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				tag = HAB
+				OR = {
+					tag = HAB
+					tag = AUT #VU - SF addition
+				}
 			}
 		}
 	}

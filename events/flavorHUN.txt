@@ -35,7 +35,10 @@ country_event = {
 	option = {
 		ai_chance = { factor = 50 }
 		trigger = {
-			HAB = { has_heir = "Ladislaus Postumus" }
+			OR = {
+				HAB = { has_heir = "Ladislaus Postumus" }
+				AUT = { has_heir = "Ladislaus Postumus" } #VU - SF addition
+			}
 		}
 		name = flavor_hun.1.a
 		define_ruler = {
@@ -89,7 +92,10 @@ country_event = {
 	option = {
 		name = flavor_hun.1.b
 		trigger = {
-			HAB = { has_heir = "Ladislaus Postumus" }
+			OR = {
+				HAB = { has_heir = "Ladislaus Postumus" }
+				AUT = { has_heir = "Ladislaus Postumus" } #VU - SF addition
+			}
 		}
 		ai_chance = { factor = 50 }
 		add_stability_or_adm_power = yes
@@ -121,7 +127,10 @@ country_event = {
 	option = {
 		ai_chance = { factor = 1 }
 		trigger = {
-			HAB = { NOT = { has_heir = "Ladislaus Postumus" } }
+			OR = {
+				HAB = { NOT = { has_heir = "Ladislaus Postumus" } }
+				AUT = { NOT = { has_heir = "Ladislaus Postumus" } } #VU - SF addition
+			}
 		}
 		name = flavor_hun.1.c
 		define_ruler = {
@@ -195,6 +204,13 @@ country_event = {
 			government = monarchy
 			has_regency = no
 		}
+		#VU - Start of SF addition
+		AUT = {
+			is_subject = no
+			government = monarchy
+			has_regency = no
+		}
+		#VU - End of SF addition
 		has_government_attribute = heir
 		NOT = { has_country_flag = hun_has_had_matthias_corvinus_event }
 	}
@@ -219,7 +235,9 @@ country_event = {
 		}
 		name = flavor_hun.2.a
 		remove_historical_friend = HAB
+		remove_historical_friend = AUT #VU - SF addition
 		HAB = { remove_historical_friend = HUN }
+		AUT = { remove_historical_friend = HUN } #VU - SF addition
 		hidden_effect = { clr_country_flag = hun_ladislaus_postumus_heir }
 		define_heir = {
 			name = "Mátyás"
@@ -256,6 +274,20 @@ country_event = {
 				country_event = { id = flavor_hun.10 days = 1 }
 			}
 		}
+		#VU - Start of SF addition
+		AUT = {
+			tooltip = {
+				add_casus_belli = {
+					target = HUN
+					type = cb_restore_personal_union
+					months = 60
+				}
+			}
+			hidden_effect = {
+				country_event = { id = flavor_hun.10 days = 1 }
+			}
+		}
+		#VU - End of SF addition
 	}
 	option = {
 		name = flavor_hun.2.b
@@ -273,6 +305,14 @@ country_event = {
 				country_event = { id = flavor_hun.3 days = 1 }
 			}
 		}
+		#VU - Start of SF addition
+		AUT = {
+			create_union = HUN
+			hidden_effect = {
+				country_event = { id = flavor_hun.3 days = 1 }
+			}
+		}
+		#VU - End of SF addition
 	}
 	option = {
 		name = flavor_hun.2.c
@@ -280,6 +320,7 @@ country_event = {
 			has_heir = yes
 			NOT = { has_heir = "Ladislaus Postumus" }
 			NOT = { dynasty = HAB }
+			NOT = { dynasty = AUT } #VU - SF addition
 		}
 		ai_chance = {
 			factor = 25
@@ -291,7 +332,9 @@ country_event = {
 			}
 		}
 		remove_historical_friend = HAB
+		remove_historical_friend = AUT #VU - SF addition
 		HAB = { remove_historical_friend = HUN }
+		AUT = { remove_historical_friend = HUN } #VU - SF addition
 		kill_ruler = yes
 		HAB = {
 			tooltip = {
@@ -305,6 +348,20 @@ country_event = {
 				country_event = { id = flavor_hun.10 days = 1 }
 			}
 		}
+		#VU - Start of SF addition
+		AUT = {
+			tooltip = {
+				add_casus_belli = {
+					target = HUN
+					type = cb_restore_personal_union
+					months = 60
+				}
+			}
+			hidden_effect = {
+				country_event = { id = flavor_hun.10 days = 1 }
+			}
+		}
+		#VU - End of SF addition
 	}
 }
 
@@ -354,6 +411,14 @@ country_event = {
 				has_ruler = "Ladislaus Postumus"
 			}
 		}
+		#VU - Start of SF addition
+		AUT = {
+			OR = {
+				has_heir = "Ladislaus Postumus"
+				has_ruler = "Ladislaus Postumus"
+			}
+		}
+		#VU - End of SF addition
 		NOT = { has_country_flag = hun_has_had_matthias_corvinus_event }
 		is_subject = no
 	}
@@ -369,7 +434,9 @@ country_event = {
 			has_heir = "Ladislaus Postumus"
 		}
 		remove_historical_friend = HAB
+		remove_historical_friend = AUT #VU - SF addition
 		HAB = { remove_historical_friend = HUN }
+		AUT = { remove_historical_friend = HUN } #VU - SF addition
 		kill_heir = { allow_new_heir = no }
 		define_heir = {
 			name = "Mátyás"
@@ -399,6 +466,20 @@ country_event = {
 				country_event = { id = flavor_hun.10 days = 1 }
 			}
 		}
+		#VU - Start of SF addition
+		AUT = {
+			tooltip = {
+				add_casus_belli = {
+					target = HUN
+					type = cb_restore_personal_union
+					months = 60
+				}
+			}
+			hidden_effect = {
+				country_event = { id = flavor_hun.10 days = 1 }
+			}
+		}
+		#VU - End of SF addition
 	}
 	option = { #Ruler dies, keep his heir
 		name = flavor_hun.201.b
@@ -430,6 +511,14 @@ country_event = {
 				country_event = { id = flavor_hun.3 days = 1 }
 			}
 		}
+		#VU - Start of SF addition
+		AUT = {
+			create_union = HUN
+			hidden_effect = {
+				country_event = { id = flavor_hun.3 days = 1 }
+			}
+		}
+		#VU - End of SF addition
 	}
 	option = { #Ruler dies with no heir, take Matyas
 		name = flavor_hun.201.d
@@ -439,7 +528,9 @@ country_event = {
 			has_heir = no
 		}
 		remove_historical_friend = HAB
+		remove_historical_friend = AUT #VU - SF addition
 		HAB = { remove_historical_friend = HUN }
+		AUT = { remove_historical_friend = HUN } #VU - SF addition
 		define_heir = {
 			name = "Mátyás"
 			culture = hungarian
@@ -469,6 +560,20 @@ country_event = {
 				country_event = { id = flavor_hun.10 days = 1 }
 			}
 		}
+		#VU - Start of SF addition
+		AUT = {
+			tooltip = {
+				add_casus_belli = {
+					target = HUN
+					type = cb_restore_personal_union
+					months = 60
+				}
+			}
+			hidden_effect = {
+				country_event = { id = flavor_hun.10 days = 1 }
+			}
+		}
+		#VU - End of SF addition
 	}
 }
 
@@ -736,8 +841,14 @@ country_event = {
 	trigger = {
 		tag = HUN
 		truce_with = TUR
-		exists = HAB
+		OR = {
+			exists = HAB
+			exists = AUT #VU - SF addition
+		}
 		HAB = {
+			is_emperor = yes
+		}
+		AUT = {
 			is_emperor = yes
 		}
 		TUR = {
@@ -2715,7 +2826,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AUT  #Addition by Altan
+		}
 		NOT = { exists = HUN }
 		any_owned_province = {
 			culture = hungarian
@@ -2807,7 +2921,10 @@ country_event = {
 				OR = {
 					NOT = { prestige = 0 }
 					emperor = {
-						NOT = { tag = HAB }
+						OR = {
+							NOT = { tag = HAB }
+							NOT = { tag = AUT }			#Addition by Altan
+						}
 					}
 				}
 				emperor = {
@@ -2957,7 +3074,10 @@ country_event = {
 		}
 		if = {
 			limit = {
-				tag = HAB
+				OR = {
+					tag = HAB
+					tag = AUT				#Addition by Altan
+				}
 			}
 			austria_proper_area = {
 				limit = {

@@ -132,6 +132,7 @@ country_event = {
 			every_elector = {
 				limit = {
 					NOT = { tag = HAB }
+					NOT = { tag = AUT }				#Addition by Altan
 					NOT = { tag = ROOT }
 					NOT = { is_subject_of = ROOT }
 				}
@@ -148,6 +149,7 @@ country_event = {
 						is_enemy = ROOT
 					}
 					NOT = { tag = HAB }
+					NOT = { tag = AUT }				#Addition by Altan
 					NOT = { tag = ROOT }
 					NOT = { is_subject_of = ROOT }
 					is_elector = no

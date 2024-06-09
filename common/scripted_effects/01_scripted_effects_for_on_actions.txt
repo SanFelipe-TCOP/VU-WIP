@@ -944,7 +944,9 @@ hab_remove_mission_mods_if_not_emperor_effect = {
 		limit = {
 			OR = {
 				tag = HAB
+				tag = AUT                #VU - SF addition
 				was_tag = HAB
+				was_tag = AUT                #VU - SF addition
 			}
 			is_emperor = no
 			NOT = { tag = HLR }
@@ -1052,7 +1054,10 @@ ladislaus_postumus_heir_died_effect = {
 	}
 	if = {
 		limit = {
-			tag = HAB
+			OR = {
+				tag = HAB
+				tag = AUT                #VU - SF addition
+			}
 			has_country_flag = hab_ladislaus_postumus_heir
 			HUN = {
 				has_heir = "Ladislaus Postumus"
@@ -1067,7 +1072,10 @@ ladislaus_postumus_heir_died_effect = {
 	}
 	if = {
 		limit = {
-			tag = HAB
+			OR = {
+				tag = HAB
+				tag = AUT                #VU - SF addition
+			}
 			has_country_flag = hab_ladislaus_postumus_heir
 			HUN = {
 				has_ruler = "Ladislaus Postumus I"
@@ -1092,6 +1100,26 @@ ladislaus_postumus_heir_died_effect = {
 	}
 }
 
+#frederick_III_king_died_effect = {
+#	if = {
+#		limit = {
+#			tag = AUT
+#			has_country_flag = aut_frederick_III_king
+#			NOT = {
+#				has_country_flag = aut_keep_frederick_III_alive
+#			}
+#			STY = {
+#				has_ruler = "Frederick III"
+#				has_country_flag = sty_frederick_III_king
+#			}
+#		}
+#		STY = {
+#			kill_ruler = {}
+#			clr_country_flag = sty_frederick_III_king
+#		}
+#	}
+#}
+
 ladislaus_postumus_king_died_effect = {
 	if = {
 		limit = {
@@ -1112,7 +1140,10 @@ ladislaus_postumus_king_died_effect = {
 	}
 	if = {
 		limit = {
-			tag = HAB
+			OR = {
+				tag = HAB
+				tag = AUT                #VU - SF addition
+			}
 			has_country_flag = hab_ladislaus_postumus_king
 			HUN = {
 				has_heir = "Ladislaus Postumus"
@@ -1158,7 +1189,10 @@ ladislaus_postumus_union_effect = {
 	}
 	if = {
 		limit = {
-			tag = HAB
+			OR = {
+				tag = HAB
+				tag = AUT                #VU - SF addition
+			}
 			has_ruler = "Ladislaus Postumus"
 			HUN = {
 				has_heir = "Ladislaus Postumus"
@@ -1170,7 +1204,10 @@ ladislaus_postumus_union_effect = {
 
 	if = {
 		limit = {
-			tag = HAB
+			OR = {
+				tag = HAB
+				tag = AUT                #VU - SF addition
+			}
 			has_ruler = "Ladislaus Postumus"
 			has_regency = no
 			HUN = {

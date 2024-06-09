@@ -143,7 +143,8 @@ country_event = {
 				name = ME_HOL_Treaty_Of_Copenhagen
 				duration = 3650
 			}
-			45 = { #Lubeck
+			#Lubeck
+			45 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = 3650
@@ -151,7 +152,8 @@ country_event = {
 					key = ME_HOL_Treaty_Of_Copenhagen
 				}
 			}
-			1926 = { #Baltic
+			#Stockholm
+			1 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = 3650
@@ -165,7 +167,8 @@ country_event = {
 				name = ME_HOL_Treaty_Of_Copenhagen
 				duration = 3650
 			}
-			45 = { #Lubeck
+			#Lubeck
+			45 = {
 				add_trade_modifier = {
 					who = FROM
 					duration = 3650
@@ -173,7 +176,8 @@ country_event = {
 					key = ME_HOL_Treaty_Of_Copenhagen
 				}
 			}
-			1926 = { #Baltic
+			#Stockholm
+			1 = {
 				add_trade_modifier = {
 					who = FROM
 					duration = 3650

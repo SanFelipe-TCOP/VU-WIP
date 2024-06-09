@@ -701,6 +701,9 @@ byz_generic_slot_5 = {
 				name = "the_theme_system"
 				duration = -1
 			}
+			hidden_effect = {
+				set_estate_privilege = ME_estate_nobles_theme_system
+			}
 		}
 	    ai_weight = {
 			factor = 500	#Byzantium is basically Ottomans in its conquest behavior

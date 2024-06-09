@@ -4198,7 +4198,7 @@ rus_russian_navy = {
 			OR = {
 				province_id = 1652
 				province_id = 33
-				province_id = 1926
+				province_id = 1 #Stockholm
 			}
 			OR = {
 				NOT = {
@@ -4226,7 +4226,8 @@ rus_russian_navy = {
 					}
 					highest_value_trade_node = yes
 				}
-				1926 = {
+				#Stockholm
+				1 = {
 					trade_share = {
 						country = ROOT
 						share = 50
@@ -4248,7 +4249,8 @@ rus_russian_navy = {
 			33 = {
 				add_trade_node_income = 30
 			}
-			1926 = {
+			#Stockholm
+			1 = {
 				add_trade_node_income = 30
 			}
 		}

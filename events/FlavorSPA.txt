@@ -3063,6 +3063,8 @@ country_event = {
 						OR = {
 							tag = HAB
 							is_subject_of = HAB
+							tag = AUT  	            #Addition by Altan
+							is_subject_of = AUT		#Addition by Altan
 						}
 						ai = yes
 					}
@@ -3076,7 +3078,9 @@ country_event = {
 					owner = {
 						OR = {
 							tag = HAB
+							tag = AUT				#Addition by Altan
 							is_subject_of = HAB
+							is_subject_of = AUT		#Addition by Altan
 						}
 						ai = yes
 					}

@@ -5,6 +5,8 @@ habsburg_glory = {
 		OR = {
 			was_tag = HAB
 			tag = HAB
+			was_tag = AUT    #VU - SF addition
+			tag = AUT     #VU - SF addition
 		}
 	}
 

@@ -1017,15 +1017,20 @@
 		allow_normal_conversion = yes
 		valid_for_nation_designer = no
 		potential = {
-			NOT = { religion = shinto }
-			NOT = { religion = confucianism }
 			OR = {
-				religion_group = eastern
-				religion_group = dharmic
-				religion_group = muslim
-				religion = animism
+				AND = {
+					NOT = { religion = shinto }
+					NOT = { religion = confucianism }
+					OR = {
+						religion_group = eastern
+						religion_group = dharmic
+						religion_group = muslim
+						religion = animism
+					}
+					technology_group = chinese
+				}
+				has_reform = solar_kingdom_reform
 			}
-			technology_group = chinese
 		}
 		trigger = {
 			has_reform = solar_kingdom_reform
